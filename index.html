@@ -50,6 +50,7 @@ html,body{margin:0}
 body{background:var(--bg);color:var(--text);font:14px/1.45 Inter,system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:var(--accent-ink);text-decoration:none}
 a:hover{text-decoration:underline}
+a.btn:hover,a.chip:hover{text-decoration:none}
 button,input,select,textarea{font:inherit;color:inherit}
 .num{font-variant-numeric:tabular-nums}
 .wrap{max-width:1240px;margin:0 auto;padding:20px 16px 64px}
@@ -105,6 +106,7 @@ header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18p
 .empty{color:var(--muted);padding:8px 0;font-size:13px}
 .chip{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:600;padding:2px 7px;border-radius:6px;border:1px solid var(--border);color:var(--text-2);background:var(--surface);white-space:nowrap}
 a.chip:hover{text-decoration:none;border-color:var(--border-strong);background:var(--surface-2)}
+.chip.coach{color:var(--accent-ink);border-color:var(--accent-soft);background:var(--accent-soft)}
 .chip.E{color:var(--e)}.chip.M{color:var(--m)}.chip.H{color:var(--h)}
 .lvl{font-size:11px;font-weight:600;color:var(--muted);text-transform:capitalize}
 .goalbar{display:flex;align-items:center;gap:10px;margin-bottom:12px}
@@ -328,6 +330,26 @@ const RATINGS = {
   ok:   { label: "Struggled", hint: "Solo, slow" },
   hard: { label: "Needed help", hint: "Hint / video" },
 };
+// ---- "Coach me" prompt opened in Claude (desktop app via claude://, claude.ai on phones) ----
+const COACH_PROMPT = `Act as my LeetCode interview coach. I'm learning problem-solving, not memorizing solutions.
+
+When I give you a problem, first help me understand the question without revealing the solution. Ask me to explain my brute-force idea.
+
+If I get stuck, give me one small hint at a time. Do not reveal the optimal approach or code unless I explicitly request it.
+
+After I solve it, ask me to explain why it works, its complexity, and what clues identify the pattern.
+
+Help me develop independent problem-solving skills.`;
+function coachPrompt(p) {
+  const lines = [COACH_PROMPT, "", `Problem: ${p.title} (Striver's SDE Sheet #${p.id}, topic: ${p.topic})`];
+  if (p.lc) lines.push(`LeetCode ${p.lc.num}${p.lc.equivalent ? " (closest LeetCode equivalent)" : ""}: https://leetcode.com/problems/${p.lc.slug}/`);
+  lines.push(`takeuforward: ${p.tuf}`, "My language: Python.");
+  return lines.join("\n");
+}
+const prefersWeb = () => matchMedia("(pointer: coarse)").matches;
+function coachUrl(p, web = prefersWeb()) {
+  return `${web ? "https://claude.ai" : "claude://claude.ai"}/new?q=${encodeURIComponent(coachPrompt(p))}`;
+}
 const nextStep = (step, r) => r === "hard" ? 0 : step + (r === "easy" ? 2 : 1);
 const dueFor = (iso, step) => step >= INTERVALS.length ? null : addDays(iso, INTERVALS[step]);
 
@@ -617,7 +639,7 @@ function renderTable() {
       const rev = st === "todo" ? "" : st === "mastered" ? `<span class="rev">mastered</span>` : `<span class="rev ${st === "due" ? "overdue" : ""}">${relDay(e.due)}</span>`;
       html += `<tr class="prob" data-open="${p.id}"><td><span class="st ${st}" title="${st}">${icon}</span></td><td class="pnum num hide-sm">${p.id}</td>
         <td class="ptitle">${esc(p.title)}${e.notes ? `<span class="note-dot" title="Has notes"></span>` : ""}${e.rated === false ? ` <span class="status warn">rate</span>` : ""}</td>
-        <td>${links(p, true)}</td>
+        <td><span class="links">${links(p, true)}<a class="chip coach" href="${coachUrl(p)}" title="Open a Claude coaching chat for this problem">✦ Coach</a></span></td>
         <td class="hide-sm"><span class="links">${p.video ? `<a class="chip" href="${esc(p.video)}" target="_blank" rel="noopener">▶ Video</a>` : ""}${p.article ? `<a class="chip" href="${esc(p.article)}" target="_blank" rel="noopener">Article</a>` : ""}</span></td>
         <td class="hide-sm"><span class="lvl">${p.level}</span></td><td>${rev}</td></tr>`;
     }
@@ -647,6 +669,9 @@ function renderDrawer() {
       <button class="btn ghost icon-btn" data-act="close" aria-label="Close">✕</button></header>
     <div class="body">
       <div>${links(p)}${p.lc?.equivalent ? `<p style="color:var(--muted);font-size:12px;margin:8px 0 0">This problem isn't on LeetCode. LC ${p.lc.num} is the closest equivalent, and solving it there still auto-syncs. TUF has the exact problem.</p>` : ""}${p.lc?.paid ? `<p style="color:var(--muted);font-size:12px;margin:8px 0 0">The LeetCode version needs Premium. Use the free TUF practice link instead.</p>` : ""}</div>
+      <div class="inline"><a class="btn primary" href="${coachUrl(p)}">✦ Coach me in Claude</a>
+        ${prefersWeb() ? "" : `<a href="${coachUrl(p, true)}" target="_blank" rel="noopener" style="font-size:12.5px">or open in the browser</a>`}
+        <span style="color:var(--muted);font-size:12px;flex-basis:100%">Opens a new chat with hints-only coaching for this problem.</span></div>
       ${e.solved ? `<div class="facts"><div><span>Status</span><b>${{ solved: "Solved", due: "Due", mastered: "Mastered ★" }[st]}</b></div>
         <div><span>Revisions</span><b class="num">${(e.reviews || []).length}</b><div class="steps">${INTERVALS.map((_, i) => `<i class="${i < step ? "on" : ""}"></i>`).join("")}</div></div>
         <div><span>Next review</span><b>${e.due ? fmtDate(e.due) : "—"}</b></div></div>` : ""}
