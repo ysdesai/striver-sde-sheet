@@ -1,0 +1,100 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='840' height='490' viewBox='0 0 840 490' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif'>
+<circle cx='70' cy='74' r='46' fill='none' stroke='#2b3138' stroke-width='10'/>
+<circle cx='70' cy='74' r='46' fill='none' stroke='#3987e5' stroke-width='10' stroke-linecap='round' stroke-dasharray='0.0 289.0' transform='rotate(-90 70 74)'/>
+<text x='70' y='76' text-anchor='middle' font-size='22' font-weight='700' fill='#e6edf3'>0%</text>
+<text x='70' y='94' text-anchor='middle' font-size='11' fill='#9198a1'>0/156</text>
+<text x='160' y='52' font-size='12' fill='#9198a1'>Current streak</text>
+<text x='160' y='82' font-size='26' font-weight='700' fill='#e6edf3'>0d</text>
+<text x='160' y='102' font-size='11' fill='#9198a1'>best 0d</text>
+<text x='330' y='52' font-size='12' fill='#9198a1'>Due for revision</text>
+<text x='330' y='82' font-size='26' font-weight='700' fill='#e6edf3'>0</text>
+<text x='330' y='102' font-size='11' fill='#9198a1'>0 mastered</text>
+<text x='500' y='52' font-size='12' fill='#9198a1'>Needed pace</text>
+<text x='500' y='82' font-size='26' font-weight='700' fill='#e6edf3'>2.9/day</text>
+<text x='500' y='102' font-size='11' fill='#9198a1'>54 days to target</text>
+<text x='670' y='52' font-size='12' fill='#9198a1'>Plan status</text>
+<text x='670' y='82' font-size='26' font-weight='700' fill='#d29922'>Behind</text>
+<text x='670' y='102' font-size='11' fill='#9198a1'>0 done vs 3 planned</text>
+<text x='16' y='152' font-size='13' font-weight='600' fill='#e6edf3'>Progress by topic</text>
+<text x='16' y='178' font-size='11.5' fill='#e6edf3'>Arrays</text>
+<rect x='206' y='169' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='178' text-anchor='end' font-size='11' fill='#9198a1'>0/5</text>
+<text x='16' y='200' font-size='11.5' fill='#e6edf3'>Arrays Part-II</text>
+<rect x='206' y='191' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='200' text-anchor='end' font-size='11' fill='#9198a1'>0/5</text>
+<text x='16' y='222' font-size='11.5' fill='#e6edf3'>Arrays Part-III</text>
+<rect x='206' y='213' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='222' text-anchor='end' font-size='11' fill='#9198a1'>0/5</text>
+<text x='16' y='244' font-size='11.5' fill='#e6edf3'>Arrays Part-IV</text>
+<rect x='206' y='235' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='244' text-anchor='end' font-size='11' fill='#9198a1'>0/5</text>
+<text x='16' y='266' font-size='11.5' fill='#e6edf3'>Linked List</text>
+<rect x='206' y='257' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='266' text-anchor='end' font-size='11' fill='#9198a1'>0/5</text>
+<text x='16' y='288' font-size='11.5' fill='#e6edf3'>Linked List Part-II</text>
+<rect x='206' y='279' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='288' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+<text x='16' y='310' font-size='11.5' fill='#e6edf3'>Linked List and Arrays</text>
+<rect x='206' y='301' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='310' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+<text x='16' y='332' font-size='11.5' fill='#e6edf3'>Greedy Algorithm</text>
+<rect x='206' y='323' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='332' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+<text x='16' y='354' font-size='11.5' fill='#e6edf3'>Recursion</text>
+<rect x='206' y='345' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='354' text-anchor='end' font-size='11' fill='#9198a1'>0/5</text>
+<text x='16' y='376' font-size='11.5' fill='#e6edf3'>Recursion and Backtracking</text>
+<rect x='206' y='367' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='376' text-anchor='end' font-size='11' fill='#9198a1'>0/5</text>
+<text x='16' y='398' font-size='11.5' fill='#e6edf3'>Binary Search</text>
+<rect x='206' y='389' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='398' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+<text x='16' y='420' font-size='11.5' fill='#e6edf3'>Heaps</text>
+<rect x='206' y='411' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='420' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+<text x='16' y='442' font-size='11.5' fill='#e6edf3'>Stack and Queue</text>
+<rect x='206' y='433' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='442' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+<text x='16' y='464' font-size='11.5' fill='#e6edf3'>Stack and Queue Part-II</text>
+<rect x='206' y='455' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='412' y='464' text-anchor='end' font-size='11' fill='#9198a1'>0/10</text>
+<text x='440' y='178' font-size='11.5' fill='#e6edf3'>String</text>
+<rect x='630' y='169' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='178' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+<text x='440' y='200' font-size='11.5' fill='#e6edf3'>String Part-II</text>
+<rect x='630' y='191' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='200' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+<text x='440' y='222' font-size='11.5' fill='#e6edf3'>Binary Tree</text>
+<rect x='630' y='213' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='222' text-anchor='end' font-size='11' fill='#9198a1'>0/11</text>
+<text x='440' y='244' font-size='11.5' fill='#e6edf3'>Binary Tree part-II</text>
+<rect x='630' y='235' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='244' text-anchor='end' font-size='11' fill='#9198a1'>0/8</text>
+<text x='440' y='266' font-size='11.5' fill='#e6edf3'>Binary Tree part-III</text>
+<rect x='630' y='257' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='266' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+<text x='440' y='288' font-size='11.5' fill='#e6edf3'>Binary Search Tree</text>
+<rect x='630' y='279' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='288' text-anchor='end' font-size='11' fill='#9198a1'>0/7</text>
+<text x='440' y='310' font-size='11.5' fill='#e6edf3'>Binary Search Tree Part-II</text>
+<rect x='630' y='301' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='310' text-anchor='end' font-size='11' fill='#9198a1'>0/4</text>
+<text x='440' y='332' font-size='11.5' fill='#e6edf3'>Binary Trees[Miscellaneous]</text>
+<rect x='630' y='323' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='332' text-anchor='end' font-size='11' fill='#9198a1'>0/4</text>
+<text x='440' y='354' font-size='11.5' fill='#e6edf3'>Graph</text>
+<rect x='630' y='345' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='354' text-anchor='end' font-size='11' fill='#9198a1'>0/3</text>
+<text x='440' y='376' font-size='11.5' fill='#e6edf3'>Graph Part-II</text>
+<rect x='630' y='367' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='376' text-anchor='end' font-size='11' fill='#9198a1'>0/2</text>
+<text x='440' y='398' font-size='11.5' fill='#e6edf3'>Dynamic Programming</text>
+<rect x='630' y='389' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='398' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+<text x='440' y='420' font-size='11.5' fill='#e6edf3'>Dynamic Programming Part-II</text>
+<rect x='630' y='411' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='420' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+<text x='440' y='442' font-size='11.5' fill='#e6edf3'>Trie</text>
+<rect x='630' y='433' width='160' height='10' rx='4' fill='#2b3138'/>
+<text x='836' y='442' text-anchor='end' font-size='11' fill='#9198a1'>0/6</text>
+</svg>

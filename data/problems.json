@@ -1,0 +1,3457 @@
+{
+ "source": "https://takeuforward.org/prep-hub/strivers-sde-sheet",
+ "fetched": "2026-10-28",
+ "topics": [
+  "Arrays",
+  "Arrays Part-II",
+  "Arrays Part-III",
+  "Arrays Part-IV",
+  "Linked List",
+  "Linked List Part-II",
+  "Linked List and Arrays",
+  "Greedy Algorithm",
+  "Recursion",
+  "Recursion and Backtracking",
+  "Binary Search",
+  "Heaps",
+  "Stack and Queue",
+  "Stack and Queue Part-II",
+  "String",
+  "String Part-II",
+  "Binary Tree",
+  "Binary Tree part-II",
+  "Binary Tree part-III",
+  "Binary Search Tree",
+  "Binary Search Tree Part-II",
+  "Binary Trees[Miscellaneous]",
+  "Graph",
+  "Graph Part-II",
+  "Dynamic Programming",
+  "Dynamic Programming Part-II",
+  "Trie"
+ ],
+ "problems": [
+  {
+   "id": 1,
+   "topic": "Arrays",
+   "topicNo": 1,
+   "title": "Set Matrix Zeroes",
+   "slug": "set-matrix-zeroes",
+   "level": "core",
+   "lc": {
+    "slug": "set-matrix-zeroes",
+    "num": 73,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/set-matrix-zeroes?source=strivers-sde-sheet",
+   "video": "https://youtu.be/N0MgLvceX7M",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/set-matrix-zeroes",
+   "tags": [
+    "Arrays",
+    "Hashing",
+    "Basic Traversal / Scan"
+   ]
+  },
+  {
+   "id": 2,
+   "topic": "Arrays",
+   "topicNo": 1,
+   "title": "Pascal's Triangle I",
+   "slug": "pascals-triangle-i",
+   "level": "core",
+   "lc": {
+    "slug": "pascals-triangle",
+    "num": 118,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/pascals-triangle-i?source=strivers-sde-sheet",
+   "video": "https://youtu.be/bR7mQgwQ_o8",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/pascals-triangle-first-n-rows",
+   "tags": [
+    "Arrays",
+    "Mathematics",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 3,
+   "topic": "Arrays",
+   "topicNo": 1,
+   "title": "Next Permutation",
+   "slug": "next-permutation",
+   "level": "core",
+   "lc": {
+    "slug": "next-permutation",
+    "num": 31,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/next-permutation?source=strivers-sde-sheet",
+   "video": "https://youtu.be/JDOXKqF60RQ",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/next-permutation",
+   "tags": [
+    "Arrays",
+    "Two Pointer"
+   ]
+  },
+  {
+   "id": 4,
+   "topic": "Arrays",
+   "topicNo": 1,
+   "title": "Kadane's Algorithm",
+   "slug": "kadane's-algorithm",
+   "level": "core",
+   "lc": {
+    "slug": "maximum-subarray",
+    "num": 53,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/kadane%27s-algorithm?source=strivers-sde-sheet",
+   "video": "https://youtu.be/AHZpyENo7k4",
+   "article": null,
+   "tags": [
+    "Arrays",
+    "Basic Traversal / Scan"
+   ]
+  },
+  {
+   "id": 5,
+   "topic": "Arrays",
+   "topicNo": 1,
+   "title": "Sort an array of 0's 1's and 2's",
+   "slug": "sort-an-array-of-0's-1's-and-2's",
+   "level": "core",
+   "lc": {
+    "slug": "sort-colors",
+    "num": 75,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/sort-an-array-of-0%27s-1%27s-and-2%27s?source=strivers-sde-sheet",
+   "video": "https://youtu.be/tp8JIuCXBaU",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/sort-array-0s-1s-2s",
+   "tags": [
+    "Arrays",
+    "Sorting",
+    "Sort and Scan"
+   ]
+  },
+  {
+   "id": 6,
+   "topic": "Arrays Part-II",
+   "topicNo": 2,
+   "title": "Rotate matrix by 90 degrees",
+   "slug": "rotate-matrix-by-90-degrees",
+   "level": "core",
+   "lc": {
+    "slug": "rotate-image",
+    "num": 48,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/rotate-matrix-by-90-degrees?source=strivers-sde-sheet",
+   "video": "https://youtu.be/Z0R2u6gd3GU",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/rotate-matrix-90-degrees-clockwise",
+   "tags": [
+    "Arrays",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 7,
+   "topic": "Arrays Part-II",
+   "topicNo": 2,
+   "title": "Merge Overlapping Subintervals",
+   "slug": "merge-overlapping-subintervals",
+   "level": "core",
+   "lc": {
+    "slug": "merge-intervals",
+    "num": 56,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/merge-overlapping-subintervals?source=strivers-sde-sheet",
+   "video": "https://youtu.be/IexN60k62jo",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/merge-overlapping-intervals",
+   "tags": [
+    "Greedy Algorithms",
+    "Arrays",
+    "Intervals / Scheduling",
+    "Sort and Scan"
+   ]
+  },
+  {
+   "id": 8,
+   "topic": "Arrays Part-II",
+   "topicNo": 2,
+   "title": "Merge two sorted arrays without extra space",
+   "slug": "merge-two-sorted-arrays-without-extra-space",
+   "level": "core",
+   "lc": {
+    "slug": "merge-sorted-array",
+    "num": 88,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/merge-two-sorted-arrays-without-extra-space?source=strivers-sde-sheet",
+   "video": "https://youtu.be/n7uwj04E0I4",
+   "article": null,
+   "tags": [
+    "Arrays",
+    "Two Pointer",
+    "Sort and Scan"
+   ]
+  },
+  {
+   "id": 9,
+   "topic": "Arrays Part-II",
+   "topicNo": 2,
+   "title": "Find the Duplicate Number",
+   "slug": "find-the-duplicate-number",
+   "level": "core",
+   "lc": {
+    "slug": "find-the-duplicate-number",
+    "num": 287,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/find-the-duplicate-number?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=32Ll35mhWg0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=1",
+   "article": null,
+   "tags": [
+    "Arrays",
+    "Bit Manipulation",
+    "Fast & Slow Pointers"
+   ]
+  },
+  {
+   "id": 10,
+   "topic": "Arrays Part-II",
+   "topicNo": 2,
+   "title": "Find the repeating and missing number",
+   "slug": "find-the-repeating-and-missing-number",
+   "level": "core",
+   "lc": {
+    "slug": "find-missing-and-repeated-values",
+    "num": 2965,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": true
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/find-the-repeating-and-missing-number?source=strivers-sde-sheet",
+   "video": "https://youtu.be/2D0D8HE6uak",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-the-missing-and-repeating-numbers-in-an-array",
+   "tags": [
+    "Arrays",
+    "Sorting",
+    "Sort and Scan"
+   ]
+  },
+  {
+   "id": 11,
+   "topic": "Arrays Part-III",
+   "topicNo": 3,
+   "title": "Search in a 2D Matrix",
+   "slug": "search-in-a-2d-matrix",
+   "level": "core",
+   "lc": {
+    "slug": "search-a-2d-matrix",
+    "num": 74,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/search-in-a-2d-matrix?source=strivers-sde-sheet",
+   "video": "https://youtu.be/ZYpYur0znng",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/search-in-sorted-2d-matrix",
+   "tags": [
+    "Binary Search",
+    "Arrays",
+    "Lower Bound / Upper Bound"
+   ]
+  },
+  {
+   "id": 12,
+   "topic": "Arrays Part-III",
+   "topicNo": 3,
+   "title": "Majority Element-I",
+   "slug": "majority-element-i",
+   "level": "core",
+   "lc": {
+    "slug": "majority-element",
+    "num": 169,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/majority-element-i?source=strivers-sde-sheet",
+   "video": "https://youtu.be/nP_ns3uSh80",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/majority-element-n-by-2",
+   "tags": [
+    "Arrays",
+    "Basic Traversal / Scan"
+   ]
+  },
+  {
+   "id": 13,
+   "topic": "Arrays Part-III",
+   "topicNo": 3,
+   "title": "Majority Element-II",
+   "slug": "majority-element-ii",
+   "level": "core",
+   "lc": {
+    "slug": "majority-element-ii",
+    "num": 229,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/majority-element-ii?source=strivers-sde-sheet",
+   "video": "https://youtu.be/vwZj1K0e9U8",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/majority-element-ii-n-by-3",
+   "tags": [
+    "Arrays",
+    "Hashing",
+    "Frequency Counting"
+   ]
+  },
+  {
+   "id": 14,
+   "topic": "Arrays Part-III",
+   "topicNo": 3,
+   "title": "Grid unique paths",
+   "slug": "grid-unique-paths",
+   "level": "core",
+   "lc": {
+    "slug": "unique-paths",
+    "num": 62,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/grid-unique-paths?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=sdE0A2Oxofw",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/grid-unique-paths",
+   "tags": [
+    "Dynamic Programming",
+    "Arrays",
+    "Grid DP"
+   ]
+  },
+  {
+   "id": 15,
+   "topic": "Arrays Part-III",
+   "topicNo": 3,
+   "title": "Reverse Pairs",
+   "slug": "reverse-pairs",
+   "level": "pro",
+   "lc": {
+    "slug": "reverse-pairs",
+    "num": 493,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/reverse-pairs?source=strivers-sde-sheet",
+   "video": "https://youtu.be/0e4bZaP3MDI",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-reverse-pairs",
+   "tags": [
+    "Arrays",
+    "Divide and Conquer"
+   ]
+  },
+  {
+   "id": 16,
+   "topic": "Arrays Part-IV",
+   "topicNo": 4,
+   "title": "Two Sum",
+   "slug": "two-sum",
+   "level": "basic",
+   "lc": {
+    "slug": "two-sum",
+    "num": 1,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/two-sum?source=strivers-sde-sheet",
+   "video": "https://youtu.be/UXDSeD9mN-k",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/two-sum",
+   "tags": [
+    "Arrays",
+    "Hashing",
+    "Basic Traversal / Scan"
+   ]
+  },
+  {
+   "id": 17,
+   "topic": "Arrays Part-IV",
+   "topicNo": 4,
+   "title": "4 Sum",
+   "slug": "4-sum",
+   "level": "pro",
+   "lc": {
+    "slug": "4sum",
+    "num": 18,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/4-sum?source=strivers-sde-sheet",
+   "video": "https://youtu.be/eD95WRfh81c",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/4sum",
+   "tags": [
+    "Arrays",
+    "Two Pointer",
+    "Sort and Scan"
+   ]
+  },
+  {
+   "id": 18,
+   "topic": "Arrays Part-IV",
+   "topicNo": 4,
+   "title": "Longest Consecutive Sequence in an Array",
+   "slug": "longest-consecutive-sequence-in-an-array",
+   "level": "core",
+   "lc": {
+    "slug": "longest-consecutive-sequence",
+    "num": 128,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/longest-consecutive-sequence-in-an-array?source=strivers-sde-sheet",
+   "video": "https://youtu.be/oO5uLE7EUlM",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/longest-consecutive-sequence-in-an-array",
+   "tags": [
+    "Hashing",
+    "Arrays",
+    "Graphs",
+    "Basic Traversal / Scan"
+   ]
+  },
+  {
+   "id": 19,
+   "topic": "Arrays Part-IV",
+   "topicNo": 4,
+   "title": "Count subarrays with given xor K",
+   "slug": "count-subarrays-with-given-xor-k",
+   "level": "pro",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/count-subarrays-with-given-xor-k?source=strivers-sde-sheet",
+   "video": "https://youtu.be/eZr-6p0B7ME",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-subarrays-with-a-given-xor-k",
+   "tags": [
+    "Hashing",
+    "Bit Manipulation",
+    "Arrays",
+    "Bitwise XOR"
+   ]
+  },
+  {
+   "id": 20,
+   "topic": "Arrays Part-IV",
+   "topicNo": 4,
+   "title": "Longest Substring Without Repeating Characters",
+   "slug": "longest-substring-without-repeating-characters",
+   "level": "core",
+   "lc": {
+    "slug": "longest-substring-without-repeating-characters",
+    "num": 3,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/longest-substring-without-repeating-characters?source=strivers-sde-sheet",
+   "video": "https://youtu.be/-zSxTJkcdAo?si=I2zfR-vlDMg0zU9z",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/longest-substring-without-repeating-characters",
+   "tags": [
+    "Strings",
+    "Hashing",
+    "Sliding Window"
+   ]
+  },
+  {
+   "id": 21,
+   "topic": "Linked List",
+   "topicNo": 5,
+   "title": "Reverse a LL",
+   "slug": "reverse-a-ll",
+   "level": "core",
+   "lc": {
+    "slug": "reverse-linked-list",
+    "num": 206,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/reverse-a-ll?source=strivers-sde-sheet",
+   "video": "https://youtu.be/D2vI2DNJGd8?si=RCaLSx01qR21IBdh",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-a-singly-linked-list",
+   "tags": [
+    "Linked List",
+    "In-place Reversal"
+   ]
+  },
+  {
+   "id": 22,
+   "topic": "Linked List",
+   "topicNo": 5,
+   "title": "Find Middle of Linked List",
+   "slug": "find-middle-of-linked-list",
+   "level": "basic",
+   "lc": {
+    "slug": "middle-of-the-linked-list",
+    "num": 876,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/find-middle-of-linked-list?source=strivers-sde-sheet",
+   "video": "https://youtu.be/7LjQ57RqgEc?si=ir_rRDio38rhamU_",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-middle-of-linked-list",
+   "tags": [
+    "Linked List",
+    "Fast & Slow Pointers"
+   ]
+  },
+  {
+   "id": 23,
+   "topic": "Linked List",
+   "topicNo": 5,
+   "title": "Merge two Sorted Lists ",
+   "slug": "merge-sorted-lists-",
+   "level": "basic",
+   "lc": {
+    "slug": "merge-two-sorted-lists",
+    "num": 21,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/merge-sorted-lists-?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=Xb4slcp1U38&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=29",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/merge-two-sorted-linked-lists",
+   "tags": [
+    "Linked List",
+    "Recursion & Backtracking",
+    "Two Pointer"
+   ]
+  },
+  {
+   "id": 24,
+   "topic": "Linked List",
+   "topicNo": 5,
+   "title": "Remove Nth node from the back of the LL",
+   "slug": "remove-nth-node-from-the-back-of-the-ll",
+   "level": "core",
+   "lc": {
+    "slug": "remove-nth-node-from-end-of-list",
+    "num": 19,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/remove-nth-node-from-the-back-of-the-ll?source=strivers-sde-sheet",
+   "video": "https://youtu.be/3kMKYQ2wNIU?si=DtFDnPU7z9HMz_GM",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/remove-the-nth-node-from-the-end-of-a-linked-list",
+   "tags": [
+    "Linked List",
+    "Two Pointer"
+   ]
+  },
+  {
+   "id": 25,
+   "topic": "Linked List",
+   "topicNo": 5,
+   "title": "Delete Node in a Linked List O(1)",
+   "slug": "delete-node-in-a-linked-list-o1",
+   "level": "core",
+   "lc": {
+    "slug": "delete-node-in-a-linked-list",
+    "num": 237,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/delete-node-in-a-linked-list-o1?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=icnp4FJdZ_c&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=31",
+   "article": null,
+   "tags": [
+    "Linked List",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 26,
+   "topic": "Linked List Part-II",
+   "topicNo": 6,
+   "title": "Find the intersection point of Y LL",
+   "slug": "find-the-intersection-point-of-y-ll",
+   "level": "core",
+   "lc": {
+    "slug": "intersection-of-two-linked-lists",
+    "num": 160,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/find-the-intersection-point-of-y-ll?source=strivers-sde-sheet",
+   "video": "https://youtu.be/0DYoPz2Tpt4?si=L-uJs5yXUxj4VJM2",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/intersection-of-two-linked-lists",
+   "tags": [
+    "Linked List",
+    "Two Pointer"
+   ]
+  },
+  {
+   "id": 27,
+   "topic": "Linked List Part-II",
+   "topicNo": 6,
+   "title": "Detect a loop in LL",
+   "slug": "detect-a-loop-in-ll",
+   "level": "core",
+   "lc": {
+    "slug": "linked-list-cycle",
+    "num": 141,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/detect-a-loop-in-ll?source=strivers-sde-sheet",
+   "video": "https://youtu.be/wiOo4DC5GGA?si=zagt6O6tFXc4_3cx",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/detect-cycle-linked-list",
+   "tags": [
+    "Linked List",
+    "Fast & Slow Pointers"
+   ]
+  },
+  {
+   "id": 28,
+   "topic": "Linked List Part-II",
+   "topicNo": 6,
+   "title": "Reverse LL in group of given size K",
+   "slug": "reverse-ll-in-group-of-given-size-k",
+   "level": "pro",
+   "lc": {
+    "slug": "reverse-nodes-in-k-group",
+    "num": 25,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/reverse-ll-in-group-of-given-size-k?source=strivers-sde-sheet",
+   "video": "https://youtu.be/lIar1skcQYI?si=_jFghHKX4eaK36a1",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-linked-list-k-groups",
+   "tags": [
+    "Linked List",
+    "In-place Reversal"
+   ]
+  },
+  {
+   "id": 29,
+   "topic": "Linked List Part-II",
+   "topicNo": 6,
+   "title": "Check if LL is palindrome or not",
+   "slug": "check-if-ll-is-palindrome-or-not",
+   "level": "core",
+   "lc": {
+    "slug": "palindrome-linked-list",
+    "num": 234,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/check-if-ll-is-palindrome-or-not?source=strivers-sde-sheet",
+   "video": "https://youtu.be/lRY_G-u_8jk?si=BpM8hRYvXSYyjl-G",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/check-if-a-linked-list-is-a-palindrome",
+   "tags": [
+    "Linked List",
+    "Fast & Slow Pointers",
+    "In-place Reversal"
+   ]
+  },
+  {
+   "id": 30,
+   "topic": "Linked List Part-II",
+   "topicNo": 6,
+   "title": "Find the starting point in LL",
+   "slug": "find-the-starting-point-in-ll",
+   "level": "core",
+   "lc": {
+    "slug": "linked-list-cycle-ii",
+    "num": 142,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/find-the-starting-point-in-ll?source=strivers-sde-sheet",
+   "video": "https://youtu.be/2Kd0KKmmHFc?si=7UreDPRjRvapeVB0",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-start-of-cycle-linked-list",
+   "tags": [
+    "Linked List",
+    "Fast & Slow Pointers"
+   ]
+  },
+  {
+   "id": 31,
+   "topic": "Linked List Part-II",
+   "topicNo": 6,
+   "title": "Flattening of LL",
+   "slug": "flattening-of-ll",
+   "level": "pro",
+   "lc": {
+    "slug": "merge-k-sorted-lists",
+    "num": 23,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/flattening-of-ll?source=strivers-sde-sheet",
+   "video": "https://youtu.be/ykelywHJWLg?si=InMg9MmTHzY22NSR",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/flatten-linked-list",
+   "tags": [
+    "Linked List",
+    "K-way Merge"
+   ]
+  },
+  {
+   "id": 32,
+   "topic": "Linked List and Arrays",
+   "topicNo": 7,
+   "title": "Rotate a LL",
+   "slug": "rotate-a-ll",
+   "level": "core",
+   "lc": {
+    "slug": "rotate-list",
+    "num": 61,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/rotate-a-ll?source=strivers-sde-sheet",
+   "video": "https://youtu.be/uT7YI7XbTY8?si=ZaChW3a68c_v54Is",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/rotate-linked-list-right-k-places",
+   "tags": [
+    "Linked List",
+    "Arrays",
+    "Two Pointer"
+   ]
+  },
+  {
+   "id": 33,
+   "topic": "Linked List and Arrays",
+   "topicNo": 7,
+   "title": "Clone a LL with random and next pointer",
+   "slug": "clone-a-ll-with-random-and-next-pointer",
+   "level": "pro",
+   "lc": {
+    "slug": "copy-list-with-random-pointer",
+    "num": 138,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/clone-a-ll-with-random-and-next-pointer?source=strivers-sde-sheet",
+   "video": "https://youtu.be/q570bKdrnlw?si=epZtpWvtNwuTf23o",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/clone-linked-list-random-pointer",
+   "tags": [
+    "Linked List",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 34,
+   "topic": "Linked List and Arrays",
+   "topicNo": 7,
+   "title": "3 Sum",
+   "slug": "3-sum",
+   "level": "core",
+   "lc": {
+    "slug": "3sum",
+    "num": 15,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/3-sum?source=strivers-sde-sheet",
+   "video": "https://youtu.be/DhFh8Kw7ymk",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/3sum",
+   "tags": [
+    "Arrays",
+    "Two Pointer",
+    "Sort and Scan"
+   ]
+  },
+  {
+   "id": 35,
+   "topic": "Linked List and Arrays",
+   "topicNo": 7,
+   "title": "Trapping Rainwater",
+   "slug": "trapping-rainwater",
+   "level": "pro",
+   "lc": {
+    "slug": "trapping-rain-water",
+    "num": 42,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/trapping-rainwater?source=strivers-sde-sheet",
+   "video": "https://youtu.be/1_5VuquLbXg?si=NFG6df318_6OtGvg",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/trapping-rain-water",
+   "tags": [
+    "Stack & Queues",
+    "Arrays",
+    "Monotonic Stack / Queue"
+   ]
+  },
+  {
+   "id": 36,
+   "topic": "Linked List and Arrays",
+   "topicNo": 7,
+   "title": "Remove duplicates from sorted array",
+   "slug": "remove-duplicates-from-sorted-array",
+   "level": "basic",
+   "lc": {
+    "slug": "remove-duplicates-from-sorted-array",
+    "num": 26,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/remove-duplicates-from-sorted-array?source=strivers-sde-sheet",
+   "video": "https://youtu.be/37E9ckMDdTk?t=1887",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/remove-duplicates-from-a-sorted-array-in-place",
+   "tags": [
+    "Arrays",
+    "Two Pointer"
+   ]
+  },
+  {
+   "id": 37,
+   "topic": "Linked List and Arrays",
+   "topicNo": 7,
+   "title": "Maximum Consecutive Ones",
+   "slug": "maximum-consecutive-ones",
+   "level": "basic",
+   "lc": {
+    "slug": "max-consecutive-ones",
+    "num": 485,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/maximum-consecutive-ones?source=strivers-sde-sheet",
+   "video": "https://youtu.be/bYWLJb3vCWY?t=1124",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/maximum-consecutive-ones-in-a-binary-array",
+   "tags": [
+    "Arrays",
+    "Basic Traversal / Scan"
+   ]
+  },
+  {
+   "id": 38,
+   "topic": "Greedy Algorithm",
+   "topicNo": 8,
+   "title": "N meetings in one room",
+   "slug": "n-meetings-in-one-room",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/n-meetings-in-one-room?source=strivers-sde-sheet",
+   "video": "https://youtu.be/mKfhTotEguk?si=2RELeq18mpmIIN3Q",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/n-meetings-in-one-room",
+   "tags": [
+    "Greedy Algorithms",
+    "Arrays",
+    "Intervals / Scheduling"
+   ]
+  },
+  {
+   "id": 39,
+   "topic": "Greedy Algorithm",
+   "topicNo": 8,
+   "title": "Minimum number of platforms required for a railway",
+   "slug": "minimum-number-of-platforms-required-for-a-railway",
+   "level": "core",
+   "lc": {
+    "slug": "divide-intervals-into-minimum-number-of-groups",
+    "num": 2406,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/minimum-number-of-platforms-required-for-a-railway?source=strivers-sde-sheet",
+   "video": "https://youtu.be/AsGzwR_FWok?si=165acXU_dtqOHuo9",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-platforms-required-for-a-railway-station",
+   "tags": [
+    "Greedy Algorithms",
+    "Mathematics",
+    "Intervals / Scheduling"
+   ]
+  },
+  {
+   "id": 40,
+   "topic": "Greedy Algorithm",
+   "topicNo": 8,
+   "title": "Job sequencing Problem",
+   "slug": "job-sequencing-problem",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/job-sequencing-problem?source=strivers-sde-sheet",
+   "video": "https://youtu.be/QbwltemZbRg?si=wvcemJ5BLPlTRmkG",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/job-sequencing-problem",
+   "tags": [
+    "Greedy Algorithms",
+    "Arrays",
+    "Greedy Choice"
+   ]
+  },
+  {
+   "id": 41,
+   "topic": "Greedy Algorithm",
+   "topicNo": 8,
+   "title": "Fractional Knapsack",
+   "slug": "fractional-knapsack",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/fractional-knapsack?source=strivers-sde-sheet",
+   "video": "https://youtu.be/1ibsQrnuEEg?si=8R2By3wpHo0zZVHE",
+   "article": null,
+   "tags": [
+    "Greedy Algorithms",
+    "Mathematics",
+    "Greedy Choice"
+   ]
+  },
+  {
+   "id": 42,
+   "topic": "Greedy Algorithm",
+   "topicNo": 8,
+   "title": "Minimum coins",
+   "slug": "minimum-coins",
+   "level": "core",
+   "lc": {
+    "slug": "coin-change",
+    "num": 322,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/minimum-coins?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=myPeWb3Y68A",
+   "article": null,
+   "tags": [
+    "Dynamic Programming",
+    "Greedy Algorithms",
+    "Mathematics",
+    "Greedy Choice"
+   ]
+  },
+  {
+   "id": 43,
+   "topic": "Greedy Algorithm",
+   "topicNo": 8,
+   "title": "Assign Cookies",
+   "slug": "assign-cookies",
+   "level": "core",
+   "lc": {
+    "slug": "assign-cookies",
+    "num": 455,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/assign-cookies?source=strivers-sde-sheet",
+   "video": "https://youtu.be/DIX2p7vb9co?si=GofAIDimue-Av0Fi",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/assign-cookies",
+   "tags": [
+    "Greedy Algorithms",
+    "Dynamic Programming",
+    "Arrays",
+    "Greedy Choice",
+    "Sort and Scan"
+   ]
+  },
+  {
+   "id": 44,
+   "topic": "Recursion",
+   "topicNo": 9,
+   "title": "Subsets II",
+   "slug": "subsets-ii",
+   "level": "core",
+   "lc": {
+    "slug": "subsets-ii",
+    "num": 90,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/subsets-ii?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=RIn3gOkbhQE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=53",
+   "article": null,
+   "tags": [
+    "Recursion & Backtracking",
+    "Arrays",
+    "Bit Manipulation",
+    "Subsets"
+   ]
+  },
+  {
+   "id": 45,
+   "topic": "Recursion",
+   "topicNo": 9,
+   "title": "Combination Sum",
+   "slug": "combination-sum",
+   "level": "core",
+   "lc": {
+    "slug": "combination-sum",
+    "num": 39,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/combination-sum?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=OyZFFqQtu98&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=49",
+   "article": null,
+   "tags": [
+    "Recursion & Backtracking",
+    "Arrays",
+    "Permutations & Combinations"
+   ]
+  },
+  {
+   "id": 46,
+   "topic": "Recursion",
+   "topicNo": 9,
+   "title": "Combination Sum II",
+   "slug": "combination-sum-ii",
+   "level": "core",
+   "lc": {
+    "slug": "combination-sum-ii",
+    "num": 40,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/combination-sum-ii?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=G1fRTGRxXU8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=50",
+   "article": null,
+   "tags": [
+    "Recursion & Backtracking",
+    "Arrays",
+    "Permutations & Combinations"
+   ]
+  },
+  {
+   "id": 47,
+   "topic": "Recursion",
+   "topicNo": 9,
+   "title": "Palindrome partitioning",
+   "slug": "palindrome-partitioning",
+   "level": "pro",
+   "lc": {
+    "slug": "palindrome-partitioning",
+    "num": 131,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/palindrome-partitioning?source=strivers-sde-sheet",
+   "video": "https://youtu.be/_H8V5hJUGd0",
+   "article": null,
+   "tags": [
+    "Recursion & Backtracking",
+    "Dynamic Programming",
+    "Strings",
+    "Permutations & Combinations"
+   ]
+  },
+  {
+   "id": 48,
+   "topic": "Recursion",
+   "topicNo": 9,
+   "title": "Permutation Sequence",
+   "slug": "permutation-sequence",
+   "level": "pro",
+   "lc": {
+    "slug": "permutation-sequence",
+    "num": 60,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/permutation-sequence?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=wT7gcXLYoao&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=55",
+   "article": null,
+   "tags": [
+    "Recursion & Backtracking",
+    "Mathematics",
+    "Permutations & Combinations"
+   ]
+  },
+  {
+   "id": 49,
+   "topic": "Recursion and Backtracking",
+   "topicNo": 10,
+   "title": "Permutations of a String",
+   "slug": "permutations-of-a-string",
+   "level": "core",
+   "lc": {
+    "slug": "permutations-ii",
+    "num": 47,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/permutations-of-a-string?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=f2ic2Rsc9pU&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=52",
+   "article": null,
+   "tags": [
+    "Recursion & Backtracking",
+    "Mathematics",
+    "Strings",
+    "Permutations & Combinations"
+   ]
+  },
+  {
+   "id": 50,
+   "topic": "Recursion and Backtracking",
+   "topicNo": 10,
+   "title": "N Queen",
+   "slug": "n-queen",
+   "level": "pro",
+   "lc": {
+    "slug": "n-queens",
+    "num": 51,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/n-queen?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=i05Ju7AftcM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=57",
+   "article": null,
+   "tags": [
+    "Recursion & Backtracking",
+    "Arrays",
+    "Constraint Satisfaction"
+   ]
+  },
+  {
+   "id": 51,
+   "topic": "Recursion and Backtracking",
+   "topicNo": 10,
+   "title": "Sudoku Solver",
+   "slug": "sudoko-solver",
+   "level": "pro",
+   "lc": {
+    "slug": "sudoku-solver",
+    "num": 37,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/sudoko-solver?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=FWAIf_EVUKE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=58",
+   "article": null,
+   "tags": [
+    "Recursion & Backtracking",
+    "Arrays",
+    "Hashing",
+    "Constraint Satisfaction"
+   ]
+  },
+  {
+   "id": 52,
+   "topic": "Recursion and Backtracking",
+   "topicNo": 10,
+   "title": "M Coloring Problem",
+   "slug": "m-coloring-problem",
+   "level": "pro",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/m-coloring-problem?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=wuVwUK25Rfc&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=59",
+   "article": null,
+   "tags": [
+    "Recursion & Backtracking",
+    "Arrays",
+    "Constraint Satisfaction"
+   ]
+  },
+  {
+   "id": 53,
+   "topic": "Recursion and Backtracking",
+   "topicNo": 10,
+   "title": "Rat in a Maze",
+   "slug": "rat-in-a-maze",
+   "level": "pro",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/rat-in-a-maze?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=bLGZhJlt4y0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=60",
+   "article": null,
+   "tags": [
+    "Recursion & Backtracking",
+    "Arrays",
+    "Constraint Satisfaction"
+   ]
+  },
+  {
+   "id": 54,
+   "topic": "Binary Search",
+   "topicNo": 11,
+   "title": "Matrix Median",
+   "slug": "matrix-median",
+   "level": "pro",
+   "lc": {
+    "slug": "median-of-a-row-wise-sorted-matrix",
+    "num": 2387,
+    "diff": "Medium",
+    "paid": true,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/matrix-median?source=strivers-sde-sheet",
+   "video": "https://youtu.be/Q9wXgdxJq48?si=ScI_0uzJh7yg8nrX",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/median-of-a-row-wise-sorted-matrix",
+   "tags": [
+    "Binary Search",
+    "Arrays",
+    "Lower Bound / Upper Bound"
+   ]
+  },
+  {
+   "id": 55,
+   "topic": "Binary Search",
+   "topicNo": 11,
+   "title": "Single element in sorted array",
+   "slug": "single-element-in-sorted-array",
+   "level": "core",
+   "lc": {
+    "slug": "single-element-in-a-sorted-array",
+    "num": 540,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/single-element-in-sorted-array?source=strivers-sde-sheet",
+   "video": "https://youtu.be/AZOmHuHadxQ",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/single-element-in-a-sorted-array",
+   "tags": [
+    "Binary Search",
+    "Arrays",
+    "Lower Bound / Upper Bound"
+   ]
+  },
+  {
+   "id": 56,
+   "topic": "Binary Search",
+   "topicNo": 11,
+   "title": "Median of 2 sorted arrays",
+   "slug": "median-of-2-sorted-arrays",
+   "level": "pro",
+   "lc": {
+    "slug": "median-of-two-sorted-arrays",
+    "num": 4,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/median-of-2-sorted-arrays?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=NTop3VTjmxk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=65",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/median-of-2-sorted-arrays",
+   "tags": [
+    "Binary Search",
+    "Arrays",
+    "Lower Bound / Upper Bound"
+   ]
+  },
+  {
+   "id": 57,
+   "topic": "Binary Search",
+   "topicNo": 11,
+   "title": "Kth element of 2 sorted arrays",
+   "slug": "kth-element-of-2-sorted-arrays",
+   "level": "pro",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/kth-element-of-2-sorted-arrays?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=nv7F4PiLUzo&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=66",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/kth-element-of-two-sorted-arrays",
+   "tags": [
+    "Binary Search",
+    "Arrays",
+    "Lower Bound / Upper Bound"
+   ]
+  },
+  {
+   "id": 58,
+   "topic": "Binary Search",
+   "topicNo": 11,
+   "title": "Allocate Minimum Number of Pages",
+   "slug": "allocate-minimum-number-of-pages",
+   "level": "pro",
+   "lc": {
+    "slug": "split-array-largest-sum",
+    "num": 410,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": true
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/allocate-minimum-number-of-pages?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=gYmWHvRHu-s&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=69",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/book-allocation-problem",
+   "tags": [
+    "Binary Search"
+   ]
+  },
+  {
+   "id": 59,
+   "topic": "Binary Search",
+   "topicNo": 11,
+   "title": "Aggressive Cows",
+   "slug": "aggressive-cows",
+   "level": "pro",
+   "lc": {
+    "slug": "magnetic-force-between-two-balls",
+    "num": 1552,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": true
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/aggressive-cows?source=strivers-sde-sheet",
+   "video": "https://youtu.be/R_Mfw4ew-Vo",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/aggressive-cows",
+   "tags": [
+    "Binary Search",
+    "Arrays",
+    "Search on Answer"
+   ]
+  },
+  {
+   "id": 60,
+   "topic": "Heaps",
+   "topicNo": 12,
+   "title": "Implement Max Heap",
+   "slug": "implement-max-heap",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/implement-max-heap?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Heaps",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 61,
+   "topic": "Heaps",
+   "topicNo": 12,
+   "title": "K-th Largest element in an array",
+   "slug": "k-th-largest-element-in-an-array",
+   "level": "pro",
+   "lc": {
+    "slug": "kth-largest-element-in-an-array",
+    "num": 215,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/k-th-largest-element-in-an-array?source=strivers-sde-sheet",
+   "video": null,
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/k-th-largest-element-in-an-array",
+   "tags": [
+    "Heaps",
+    "Arrays",
+    "Top K Elements",
+    "Priority Queue"
+   ]
+  },
+  {
+   "id": 62,
+   "topic": "Heaps",
+   "topicNo": 12,
+   "title": "Maximum Sum Combination",
+   "slug": "maximum-sum-combination",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/maximum-sum-combination?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Heaps",
+    "Mathematics",
+    "Top K Elements",
+    "Priority Queue"
+   ]
+  },
+  {
+   "id": 63,
+   "topic": "Heaps",
+   "topicNo": 12,
+   "title": "Find Median from Data Stream",
+   "slug": "find-median-from-data-stream",
+   "level": "pro",
+   "lc": {
+    "slug": "find-median-from-data-stream",
+    "num": 295,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/find-median-from-data-stream?source=strivers-sde-sheet",
+   "video": null,
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-median-data-stream",
+   "tags": [
+    "Heaps",
+    "Two Heaps",
+    "Priority Queue"
+   ]
+  },
+  {
+   "id": 64,
+   "topic": "Heaps",
+   "topicNo": 12,
+   "title": "Merge K Sorted Arrays",
+   "slug": "merge-k-sorted-arrays",
+   "level": "pro",
+   "lc": {
+    "slug": "merge-k-sorted-lists",
+    "num": 23,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/merge-k-sorted-arrays?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Heaps",
+    "K-way Merge",
+    "Priority Queue"
+   ]
+  },
+  {
+   "id": 65,
+   "topic": "Heaps",
+   "topicNo": 12,
+   "title": "Top K Frequent Elements",
+   "slug": "top-k-frequent-elements",
+   "level": "core",
+   "lc": {
+    "slug": "top-k-frequent-elements",
+    "num": 347,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/top-k-frequent-elements?source=strivers-sde-sheet",
+   "video": null,
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/top-k-frequent-elements",
+   "tags": [
+    "Heaps",
+    "Hashing",
+    "Arrays",
+    "Top K Elements",
+    "Frequency Counting",
+    "Priority Queue"
+   ]
+  },
+  {
+   "id": 66,
+   "topic": "Stack and Queue",
+   "topicNo": 13,
+   "title": "Implement Stack using Arrays",
+   "slug": "implement-stack-using-arrays",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/implement-stack-using-arrays?source=strivers-sde-sheet",
+   "video": "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/implement-a-stack-using-an-array",
+   "tags": [
+    "Stack & Queues",
+    "Arrays",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 67,
+   "topic": "Stack and Queue",
+   "topicNo": 13,
+   "title": "Implement Queue using Arrays",
+   "slug": "implement-queue-using-arrays",
+   "level": "core",
+   "lc": {
+    "slug": "design-circular-queue",
+    "num": 622,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": true
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/implement-queue-using-arrays?source=strivers-sde-sheet",
+   "video": "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/implement-a-queue-using-an-array",
+   "tags": [
+    "Stack & Queues",
+    "Arrays",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 68,
+   "topic": "Stack and Queue",
+   "topicNo": 13,
+   "title": "Implement Queue using Stack",
+   "slug": "implement-queue-using-stack",
+   "level": "core",
+   "lc": {
+    "slug": "implement-queue-using-stacks",
+    "num": 232,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/implement-queue-using-stack?source=strivers-sde-sheet",
+   "video": "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/implement-a-queue-using-stacks",
+   "tags": [
+    "Stack & Queues",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 69,
+   "topic": "Stack and Queue",
+   "topicNo": 13,
+   "title": "Balanced Paranthesis",
+   "slug": "balanced-paranthesis",
+   "level": "core",
+   "lc": {
+    "slug": "valid-parentheses",
+    "num": 20,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/balanced-paranthesis?source=strivers-sde-sheet",
+   "video": "https://youtu.be/xwjS0iZhw4I?si=UoyKpFn4Q3nf5h2R",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/check-balanced-parentheses-using-a-stack",
+   "tags": [
+    "Stack & Queues",
+    "Strings",
+    "Parentheses Matching"
+   ]
+  },
+  {
+   "id": 70,
+   "topic": "Stack and Queue",
+   "topicNo": 13,
+   "title": "Next Greater Element",
+   "slug": "next-greater-element",
+   "level": "core",
+   "lc": {
+    "slug": "next-greater-element-i",
+    "num": 496,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/next-greater-element?source=strivers-sde-sheet",
+   "video": "https://youtu.be/e7XQLtOQM3I?si=QdcHpTtx6gAHsext",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/next-greater-element",
+   "tags": [
+    "Stack & Queues",
+    "Arrays",
+    "Monotonic Stack / Queue"
+   ]
+  },
+  {
+   "id": 71,
+   "topic": "Stack and Queue",
+   "topicNo": 13,
+   "title": "Sort a Stack",
+   "slug": "sort-a-stack",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/sort-a-stack?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Stack & Queues",
+    "Simulation / Implementation",
+    "Sort and Scan"
+   ]
+  },
+  {
+   "id": 72,
+   "topic": "Stack and Queue Part-II",
+   "topicNo": 14,
+   "title": "Next Smaller Element",
+   "slug": "next-smaller-element",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/next-smaller-element?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Stack & Queues",
+    "Arrays",
+    "Monotonic Stack / Queue"
+   ]
+  },
+  {
+   "id": 73,
+   "topic": "Stack and Queue Part-II",
+   "topicNo": 14,
+   "title": "LRU Cache",
+   "slug": "lru-cache",
+   "level": "pro",
+   "lc": {
+    "slug": "lru-cache",
+    "num": 146,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/lru-cache?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=z9bJUPxzFOw",
+   "article": null,
+   "tags": [
+    "Stack & Queues",
+    "Linked List",
+    "Hashing",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 74,
+   "topic": "Stack and Queue Part-II",
+   "topicNo": 14,
+   "title": "LFU Cache",
+   "slug": "lfu-cache",
+   "level": "pro",
+   "lc": {
+    "slug": "lfu-cache",
+    "num": 460,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/lfu-cache?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=0PSB9y8ehbk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=79",
+   "article": null,
+   "tags": [
+    "Stack & Queues",
+    "Linked List",
+    "Hashing",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 75,
+   "topic": "Stack and Queue Part-II",
+   "topicNo": 14,
+   "title": "Largest rectangle in a histogram",
+   "slug": "largest-rectangle-in-a-histogram",
+   "level": "pro",
+   "lc": {
+    "slug": "largest-rectangle-in-histogram",
+    "num": 84,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/largest-rectangle-in-a-histogram?source=strivers-sde-sheet",
+   "video": "https://youtu.be/Bzat9vgD0fs?si=DiBlLejXcr6EJoyB",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/largest-rectangle-in-histogram",
+   "tags": [
+    "Stack & Queues",
+    "Arrays",
+    "Monotonic Stack / Queue"
+   ]
+  },
+  {
+   "id": 76,
+   "topic": "Stack and Queue Part-II",
+   "topicNo": 14,
+   "title": "Sliding Window Maximum",
+   "slug": "sliding-window-maximum",
+   "level": "pro",
+   "lc": {
+    "slug": "sliding-window-maximum",
+    "num": 239,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/sliding-window-maximum?source=strivers-sde-sheet",
+   "video": "https://youtu.be/NwBvene4Imo?si=eU1PY-bcQfk5wdog",
+   "article": null,
+   "tags": [
+    "Stack & Queues",
+    "Arrays",
+    "Heaps",
+    "Monotonic Stack / Queue"
+   ]
+  },
+  {
+   "id": 77,
+   "topic": "Stack and Queue Part-II",
+   "topicNo": 14,
+   "title": "Implement Min Stack",
+   "slug": "implement-min-stack",
+   "level": "core",
+   "lc": {
+    "slug": "min-stack",
+    "num": 155,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/implement-min-stack?source=strivers-sde-sheet",
+   "video": "https://youtu.be/NdDIaH91P0g?si=4_Jbsq5trFvfSdUY",
+   "article": null,
+   "tags": [
+    "Stack & Queues",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 78,
+   "topic": "Stack and Queue Part-II",
+   "topicNo": 14,
+   "title": "Rotten Oranges",
+   "slug": "rotten-oranges",
+   "level": "core",
+   "lc": {
+    "slug": "rotting-oranges",
+    "num": 994,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/rotten-oranges?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=yf3oUhkvqA0",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/rotting-oranges",
+   "tags": [
+    "Graphs",
+    "Arrays",
+    "BFS / Level Order"
+   ]
+  },
+  {
+   "id": 79,
+   "topic": "Stack and Queue Part-II",
+   "topicNo": 14,
+   "title": "Stock span problem",
+   "slug": "stock-span-problem",
+   "level": "core",
+   "lc": {
+    "slug": "online-stock-span",
+    "num": 901,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/stock-span-problem?source=strivers-sde-sheet",
+   "video": "https://youtu.be/eay-zoSRkVc?si=deNNe5i38BOAntha",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/stock-span-problem",
+   "tags": [
+    "Stack & Queues",
+    "Arrays",
+    "Monotonic Stack / Queue"
+   ]
+  },
+  {
+   "id": 80,
+   "topic": "Stack and Queue Part-II",
+   "topicNo": 14,
+   "title": "Maximum of Minimums for Every Window Size",
+   "slug": "maximum-of-minimums-for-every-window-size",
+   "level": "core",
+   "lc": {
+    "slug": "maximum-of-minimum-values-in-all-subarrays",
+    "num": 1950,
+    "diff": "Medium",
+    "paid": true,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/maximum-of-minimums-for-every-window-size?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Stack & Queues",
+    "Mathematics",
+    "Monotonic Stack / Queue"
+   ]
+  },
+  {
+   "id": 81,
+   "topic": "Stack and Queue Part-II",
+   "topicNo": 14,
+   "title": "Celebrity Problem",
+   "slug": "celebrity-problem",
+   "level": "core",
+   "lc": {
+    "slug": "find-the-celebrity",
+    "num": 277,
+    "diff": "Medium",
+    "paid": true,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/celebrity-problem?source=strivers-sde-sheet",
+   "video": "https://youtu.be/cEadsbTeze4?si=olXYfOs7l-SEn2zl",
+   "article": null,
+   "tags": [
+    "Stack & Queues",
+    "Arrays",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 82,
+   "topic": "String",
+   "topicNo": 15,
+   "title": "Reverse every word in a string",
+   "slug": "reverse-every-word-in-a-string",
+   "level": "core",
+   "lc": {
+    "slug": "reverse-words-in-a-string",
+    "num": 151,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/reverse-every-word-in-a-string?source=strivers-sde-sheet",
+   "video": null,
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-every-word-in-a-string",
+   "tags": [
+    "Strings",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 83,
+   "topic": "String",
+   "topicNo": 15,
+   "title": "Longest Palindrome in a String",
+   "slug": "longest-palindrome-in-a-string",
+   "level": "core",
+   "lc": {
+    "slug": "longest-palindromic-substring",
+    "num": 5,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/longest-palindrome-in-a-string?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Strings"
+   ]
+  },
+  {
+   "id": 84,
+   "topic": "String",
+   "topicNo": 15,
+   "title": "Roman to Integer",
+   "slug": "roman-to-integer",
+   "level": "basic",
+   "lc": {
+    "slug": "roman-to-integer",
+    "num": 13,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/roman-to-integer?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Strings",
+    "Hashing",
+    "Mathematics",
+    "Basic Traversal / Scan"
+   ]
+  },
+  {
+   "id": 85,
+   "topic": "String",
+   "topicNo": 15,
+   "title": "Implement strStr()",
+   "slug": "implement-strstr",
+   "level": "core",
+   "lc": {
+    "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+    "num": 28,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/implement-strstr?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Strings"
+   ]
+  },
+  {
+   "id": 86,
+   "topic": "String",
+   "topicNo": 15,
+   "title": "Longest Common Prefix",
+   "slug": "longest-common-prefix",
+   "level": "core",
+   "lc": {
+    "slug": "longest-common-prefix",
+    "num": 14,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/longest-common-prefix?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Strings",
+    "Tries",
+    "Arrays",
+    "Prefix Matching"
+   ]
+  },
+  {
+   "id": 87,
+   "topic": "String",
+   "topicNo": 15,
+   "title": "Rabin Karp Algorithm",
+   "slug": "rabin-karp-algorithm",
+   "level": "pro",
+   "lc": {
+    "slug": "repeated-string-match",
+    "num": 686,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/rabin-karp-algorithm?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Strings",
+    "String Matching / Rolling Hash"
+   ]
+  },
+  {
+   "id": 88,
+   "topic": "String Part-II",
+   "topicNo": 16,
+   "title": "Z function",
+   "slug": "z-function",
+   "level": "pro",
+   "lc": {
+    "slug": "sum-of-scores-of-built-strings",
+    "num": 2223,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": true
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/z-function?source=strivers-sde-sheet",
+   "video": null,
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/z-function",
+   "tags": [
+    "Strings",
+    "String Matching / Rolling Hash"
+   ]
+  },
+  {
+   "id": 89,
+   "topic": "String Part-II",
+   "topicNo": 16,
+   "title": "KMP Algorithm or LPS array",
+   "slug": "kmp-algorithm-or-lps-array",
+   "level": "pro",
+   "lc": {
+    "slug": "shortest-palindrome",
+    "num": 214,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": true
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/kmp-algorithm-or-lps-array?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Strings",
+    "String Matching / Rolling Hash"
+   ]
+  },
+  {
+   "id": 90,
+   "topic": "String Part-II",
+   "topicNo": 16,
+   "title": "Minimum insertions to make string palindrome",
+   "slug": "minimum-insertions-to-make-string-palindrome",
+   "level": "pro",
+   "lc": {
+    "slug": "minimum-insertion-steps-to-make-a-string-palindrome",
+    "num": 1312,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/minimum-insertions-to-make-string-palindrome?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=xPBLEj41rFU",
+   "article": null,
+   "tags": [
+    "Dynamic Programming",
+    "Strings",
+    "String DP"
+   ]
+  },
+  {
+   "id": 91,
+   "topic": "String Part-II",
+   "topicNo": 16,
+   "title": "Valid Anagram",
+   "slug": "valid-anagram",
+   "level": "basic",
+   "lc": {
+    "slug": "valid-anagram",
+    "num": 242,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/valid-anagram?source=strivers-sde-sheet",
+   "video": null,
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/check-if-two-strings-are-anagrams",
+   "tags": [
+    "Hashing",
+    "Strings",
+    "Frequency Counting"
+   ]
+  },
+  {
+   "id": 92,
+   "topic": "String Part-II",
+   "topicNo": 16,
+   "title": "Count and say",
+   "slug": "count-and-say",
+   "level": "core",
+   "lc": {
+    "slug": "count-and-say",
+    "num": 38,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/count-and-say?source=strivers-sde-sheet",
+   "video": null,
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-and-say",
+   "tags": [
+    "Strings",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 93,
+   "topic": "String Part-II",
+   "topicNo": 16,
+   "title": "Compare version numbers",
+   "slug": "compare-version-numbers",
+   "level": "core",
+   "lc": {
+    "slug": "compare-version-numbers",
+    "num": 165,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/compare-version-numbers?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Strings",
+    "Two Pointer"
+   ]
+  },
+  {
+   "id": 94,
+   "topic": "Binary Tree",
+   "topicNo": 17,
+   "title": "Inorder Traversal",
+   "slug": "inorder-traversal",
+   "level": "basic",
+   "lc": {
+    "slug": "binary-tree-inorder-traversal",
+    "num": 94,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/inorder-traversal?source=strivers-sde-sheet",
+   "video": "https://youtu.be/lxTGsVXjwvM",
+   "article": null,
+   "tags": [
+    "Binary Trees",
+    "Recursion & Backtracking",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 95,
+   "topic": "Binary Tree",
+   "topicNo": 17,
+   "title": "Postorder Traversal",
+   "slug": "postorder-traversal",
+   "level": "basic",
+   "lc": {
+    "slug": "binary-tree-postorder-traversal",
+    "num": 145,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/postorder-traversal?source=strivers-sde-sheet",
+   "video": "https://youtu.be/2YBhNLodD8Q",
+   "article": null,
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 96,
+   "topic": "Binary Tree",
+   "topicNo": 17,
+   "title": "Morris Inorder Traversal ",
+   "slug": "morris-inorder-traversal-",
+   "level": "pro",
+   "lc": {
+    "slug": "binary-tree-inorder-traversal",
+    "num": 94,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/morris-inorder-traversal-?source=strivers-sde-sheet",
+   "video": "https://youtu.be/80Zug6D1_r4",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/morris-inorder-traversal",
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 97,
+   "topic": "Binary Tree",
+   "topicNo": 17,
+   "title": "Morris Preorder Traversal ",
+   "slug": "morris-preorder-traversal-",
+   "level": "pro",
+   "lc": {
+    "slug": "binary-tree-preorder-traversal",
+    "num": 144,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/morris-preorder-traversal-?source=strivers-sde-sheet",
+   "video": "https://youtu.be/80Zug6D1_r4",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/morris-preorder-traversal",
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 98,
+   "topic": "Binary Tree",
+   "topicNo": 17,
+   "title": "Right/Left View of BT",
+   "slug": "right-left-view-of-bt",
+   "level": "core",
+   "lc": {
+    "slug": "binary-tree-right-side-view",
+    "num": 199,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/right-left-view-of-bt?source=strivers-sde-sheet",
+   "video": "https://youtu.be/KV4mRzTjlAk",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/left-and-right-views-of-a-binary-tree",
+   "tags": [
+    "Binary Trees",
+    "BFS / Level Order"
+   ]
+  },
+  {
+   "id": 99,
+   "topic": "Binary Tree",
+   "topicNo": 17,
+   "title": "Bottom view of BT",
+   "slug": "bottom-view-of-bt",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/bottom-view-of-bt?source=strivers-sde-sheet",
+   "video": "https://youtu.be/0FtVY6I4pB8",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/bottom-view-of-binary-tree",
+   "tags": [
+    "Binary Trees",
+    "BFS / Level Order"
+   ]
+  },
+  {
+   "id": 100,
+   "topic": "Binary Tree",
+   "topicNo": 17,
+   "title": "Top View of BT",
+   "slug": "top-view-of-bt",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/top-view-of-bt?source=strivers-sde-sheet",
+   "video": "https://youtu.be/Et9OCDNvJ78",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/top-view-of-binary-tree",
+   "tags": [
+    "Binary Trees",
+    "BFS / Level Order"
+   ]
+  },
+  {
+   "id": 101,
+   "topic": "Binary Tree",
+   "topicNo": 17,
+   "title": "Pre, Post, Inorder in one traversal",
+   "slug": "pre,-post,-inorder-in-one-traversal",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/pre,-post,-inorder-in-one-traversal?source=strivers-sde-sheet",
+   "video": "https://youtu.be/ySp2epYvgTE",
+   "article": null,
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 102,
+   "topic": "Binary Tree",
+   "topicNo": 17,
+   "title": "Vertical Order Traversal",
+   "slug": "vertical-order-traversal",
+   "level": "pro",
+   "lc": {
+    "slug": "vertical-order-traversal-of-a-binary-tree",
+    "num": 987,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/vertical-order-traversal?source=strivers-sde-sheet",
+   "video": "https://youtu.be/q_a6lpbKJdw",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/vertical-order-traversal-of-a-binary-tree",
+   "tags": [
+    "Binary Trees",
+    "BFS / Level Order"
+   ]
+  },
+  {
+   "id": 103,
+   "topic": "Binary Tree",
+   "topicNo": 17,
+   "title": "Print root to leaf path in BT",
+   "slug": "print-root-to-leaf-path-in-bt",
+   "level": "core",
+   "lc": {
+    "slug": "binary-tree-paths",
+    "num": 257,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": true
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/print-root-to-leaf-path-in-bt?source=strivers-sde-sheet",
+   "video": "https://youtu.be/fmflMqVOC7k",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/print-root-to-leaf-path-in-binary-tree",
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 104,
+   "topic": "Binary Tree",
+   "topicNo": 17,
+   "title": "Maximum Width of BT",
+   "slug": "maximum-width-of-bt",
+   "level": "pro",
+   "lc": {
+    "slug": "maximum-width-of-binary-tree",
+    "num": 662,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/maximum-width-of-bt?source=strivers-sde-sheet",
+   "video": "https://youtu.be/ZbybYvcVLks",
+   "article": null,
+   "tags": [
+    "Binary Trees",
+    "BFS / Level Order"
+   ]
+  },
+  {
+   "id": 105,
+   "topic": "Binary Tree part-II",
+   "topicNo": 18,
+   "title": "Level Order Traversal",
+   "slug": "level-order-traversal",
+   "level": "core",
+   "lc": {
+    "slug": "binary-tree-level-order-traversal",
+    "num": 102,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/level-order-traversal?source=strivers-sde-sheet",
+   "video": "https://youtu.be/EoAsWbO7sqg",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/binary-tree-level-order-traversal",
+   "tags": [
+    "Binary Trees",
+    "BFS / Level Order"
+   ]
+  },
+  {
+   "id": 106,
+   "topic": "Binary Tree part-II",
+   "topicNo": 18,
+   "title": "Maximum Depth in BT",
+   "slug": "maximum-depth-in-bt",
+   "level": "core",
+   "lc": {
+    "slug": "maximum-depth-of-binary-tree",
+    "num": 104,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/maximum-depth-in-bt?source=strivers-sde-sheet",
+   "video": "https://youtu.be/eD3tmO66aBA",
+   "article": null,
+   "tags": [
+    "Binary Trees",
+    "Recursion & Backtracking",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 107,
+   "topic": "Binary Tree part-II",
+   "topicNo": 18,
+   "title": "Diameter of Binary Tree",
+   "slug": "diameter-of-binary-tree",
+   "level": "core",
+   "lc": {
+    "slug": "diameter-of-binary-tree",
+    "num": 543,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/diameter-of-binary-tree?source=strivers-sde-sheet",
+   "video": "https://youtu.be/Rezetez59Nk",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/diameter-of-a-binary-tree",
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 108,
+   "topic": "Binary Tree part-II",
+   "topicNo": 18,
+   "title": "Check for balanced binary tree",
+   "slug": "check-for-balanced-binary-tree",
+   "level": "core",
+   "lc": {
+    "slug": "balanced-binary-tree",
+    "num": 110,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/check-for-balanced-binary-tree?source=strivers-sde-sheet",
+   "video": "https://youtu.be/Yt50Jfbd8Po",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/check-if-a-binary-tree-is-height-balanced",
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 109,
+   "topic": "Binary Tree part-II",
+   "topicNo": 18,
+   "title": "LCA in BT",
+   "slug": "lca-in-bt",
+   "level": "pro",
+   "lc": {
+    "slug": "lowest-common-ancestor-of-a-binary-tree",
+    "num": 236,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/lca-in-bt?source=strivers-sde-sheet",
+   "video": "https://youtu.be/_-QHfMDde90",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/lowest-common-ancestor-in-a-binary-tree",
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 110,
+   "topic": "Binary Tree part-II",
+   "topicNo": 18,
+   "title": "Check if two trees are identical or not",
+   "slug": "check-if-two-trees-are-identical-or-not",
+   "level": "core",
+   "lc": {
+    "slug": "same-tree",
+    "num": 100,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/check-if-two-trees-are-identical-or-not?source=strivers-sde-sheet",
+   "video": "https://youtu.be/BhuvF_-PWS0",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/check-identical-binary-trees",
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 111,
+   "topic": "Binary Tree part-II",
+   "topicNo": 18,
+   "title": "Zig Zag or Spiral Traversal",
+   "slug": "zig-zag-or-spiral-traversal",
+   "level": "core",
+   "lc": {
+    "slug": "binary-tree-zigzag-level-order-traversal",
+    "num": 103,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/zig-zag-or-spiral-traversal?source=strivers-sde-sheet",
+   "video": "https://youtu.be/3OXWEdlIGl4",
+   "article": null,
+   "tags": [
+    "Binary Trees",
+    "BFS / Level Order"
+   ]
+  },
+  {
+   "id": 112,
+   "topic": "Binary Tree part-II",
+   "topicNo": 18,
+   "title": "Boundary Traversal",
+   "slug": "boundary-traversal",
+   "level": "core",
+   "lc": {
+    "slug": "boundary-of-binary-tree",
+    "num": 545,
+    "diff": "Medium",
+    "paid": true,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/boundary-traversal?source=strivers-sde-sheet",
+   "video": "https://youtu.be/0ca1nvR0be4",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/boundary-traversal-of-a-binary-tree",
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 113,
+   "topic": "Binary Tree part-III",
+   "topicNo": 19,
+   "title": "Maximum path sum ",
+   "slug": "maximum-path-sum-",
+   "level": "pro",
+   "lc": {
+    "slug": "binary-tree-maximum-path-sum",
+    "num": 124,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/maximum-path-sum-?source=strivers-sde-sheet",
+   "video": "https://youtu.be/WszrfSwMz58",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/binary-tree-maximum-path-sum",
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 114,
+   "topic": "Binary Tree part-III",
+   "topicNo": 19,
+   "title": "Construct a BT from Preorder and Inorder",
+   "slug": "construct-a-bt-from-preorder-and-inorder",
+   "level": "core",
+   "lc": {
+    "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+    "num": 105,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/construct-a-bt-from-preorder-and-inorder?source=strivers-sde-sheet",
+   "video": "https://youtu.be/aZNaLrVebKQ",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/construct-a-binary-tree-from-preorder-and-inorder",
+   "tags": [
+    "Binary Trees",
+    "Hashing",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 115,
+   "topic": "Binary Tree part-III",
+   "topicNo": 19,
+   "title": "Construct a BT from Postorder and Inorder",
+   "slug": "construct-a-bt-from-postorder-and-inorder",
+   "level": "core",
+   "lc": {
+    "slug": "construct-binary-tree-from-inorder-and-postorder-traversal",
+    "num": 106,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/construct-a-bt-from-postorder-and-inorder?source=strivers-sde-sheet",
+   "video": "https://youtu.be/LgLRTaEMRVc",
+   "article": null,
+   "tags": [
+    "Binary Trees",
+    "Hashing",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 116,
+   "topic": "Binary Tree part-III",
+   "topicNo": 19,
+   "title": "Flatten Binary Tree to Linked List",
+   "slug": "flatten-binary-tree-to-linked-list",
+   "level": "pro",
+   "lc": {
+    "slug": "flatten-binary-tree-to-linked-list",
+    "num": 114,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/flatten-binary-tree-to-linked-list?source=strivers-sde-sheet",
+   "video": "https://youtu.be/sWf7k1x9XR4",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/flatten-binary-tree-to-linked-list",
+   "tags": [
+    "Binary Trees",
+    "Linked List",
+    "Stack & Queues",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 117,
+   "topic": "Binary Tree part-III",
+   "topicNo": 19,
+   "title": "Check for symmetrical BTs",
+   "slug": "check-for-symmetrical-bts",
+   "level": "core",
+   "lc": {
+    "slug": "symmetric-tree",
+    "num": 101,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/check-for-symmetrical-bts?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=nKggNAiEpBE",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/symmetric-binary-tree",
+   "tags": [
+    "Binary Trees",
+    "Recursion & Backtracking",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 118,
+   "topic": "Binary Tree part-III",
+   "topicNo": 19,
+   "title": "Children Sum Property in Binary Tree",
+   "slug": "children-sum-property-in-binary-tree",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/children-sum-property-in-binary-tree?source=strivers-sde-sheet",
+   "video": "https://youtu.be/fnmisPM6cVo",
+   "article": null,
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 119,
+   "topic": "Binary Search Tree",
+   "topicNo": 20,
+   "title": "Populating Next Right Pointers in Each Node",
+   "slug": "populating-next-right-pointers-in-each-node",
+   "level": "core",
+   "lc": {
+    "slug": "populating-next-right-pointers-in-each-node",
+    "num": 116,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/populating-next-right-pointers-in-each-node?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Binary Trees",
+    "Linked List",
+    "BFS / Level Order"
+   ]
+  },
+  {
+   "id": 120,
+   "topic": "Binary Search Tree",
+   "topicNo": 20,
+   "title": "Search in BST",
+   "slug": "search-in-bst",
+   "level": "basic",
+   "lc": {
+    "slug": "search-in-a-binary-search-tree",
+    "num": 700,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/search-in-bst?source=strivers-sde-sheet",
+   "video": "https://youtu.be/KcNt6v_56cc",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/search-in-a-binary-search-tree",
+   "tags": [
+    "Binary Search Trees",
+    "Lower Bound / Upper Bound"
+   ]
+  },
+  {
+   "id": 121,
+   "topic": "Binary Search Tree",
+   "topicNo": 20,
+   "title": "Construct BST from given keys",
+   "slug": "construct-bst-from-given-keys",
+   "level": "core",
+   "lc": {
+    "slug": "convert-sorted-array-to-binary-search-tree",
+    "num": 108,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/construct-bst-from-given-keys?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": []
+  },
+  {
+   "id": 122,
+   "topic": "Binary Search Tree",
+   "topicNo": 20,
+   "title": "Construct a BST from a preorder traversal",
+   "slug": "construct-a-bst-from-a-preorder-traversal",
+   "level": "core",
+   "lc": {
+    "slug": "construct-binary-search-tree-from-preorder-traversal",
+    "num": 1008,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/construct-a-bst-from-a-preorder-traversal?source=strivers-sde-sheet",
+   "video": "https://youtu.be/UmJT3j26t1I",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/construct-a-bst-from-preorder-traversal",
+   "tags": [
+    "Binary Search Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 123,
+   "topic": "Binary Search Tree",
+   "topicNo": 20,
+   "title": "Check if a tree is a BST or not",
+   "slug": "check-if-a-tree-is-a-bst-or-not",
+   "level": "core",
+   "lc": {
+    "slug": "validate-binary-search-tree",
+    "num": 98,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/check-if-a-tree-is-a-bst-or-not?source=strivers-sde-sheet",
+   "video": "https://youtu.be/f-sj7I5oXEI",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/validate-binary-search-tree",
+   "tags": [
+    "Binary Search Trees",
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 124,
+   "topic": "Binary Search Tree",
+   "topicNo": 20,
+   "title": "LCA in BST",
+   "slug": "lca-in-bst",
+   "level": "core",
+   "lc": {
+    "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+    "num": 235,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/lca-in-bst?source=strivers-sde-sheet",
+   "video": "https://youtu.be/cX_kPV_foZc",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/lowest-common-ancestor-of-a-binary-search-tree",
+   "tags": [
+    "Binary Search Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 125,
+   "topic": "Binary Search Tree",
+   "topicNo": 20,
+   "title": "Inorder successor and predecessor in BST",
+   "slug": "inorder-successor-and-predecessor-in-bst",
+   "level": "core",
+   "lc": {
+    "slug": "inorder-successor-in-bst",
+    "num": 285,
+    "diff": "Medium",
+    "paid": true,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/inorder-successor-and-predecessor-in-bst?source=strivers-sde-sheet",
+   "video": "https://youtu.be/SXKAD2svfmI",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/inorder-successor-and-predecessor-in-a-bst",
+   "tags": [
+    "Binary Search Trees",
+    "Lower Bound / Upper Bound"
+   ]
+  },
+  {
+   "id": 126,
+   "topic": "Binary Search Tree Part-II",
+   "topicNo": 21,
+   "title": "Kth Smallest and Largest element in BST",
+   "slug": "kth-smallest-and-largest-element-in-bst",
+   "level": "core",
+   "lc": {
+    "slug": "kth-smallest-element-in-a-bst",
+    "num": 230,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/kth-smallest-and-largest-element-in-bst?source=strivers-sde-sheet",
+   "video": "https://youtu.be/9TJYWh0adfk",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/kth-smallest-and-largest-elements-in-a-bst",
+   "tags": [
+    "Binary Search Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 127,
+   "topic": "Binary Search Tree Part-II",
+   "topicNo": 21,
+   "title": "Two sum in BST",
+   "slug": "two-sum-in-bst",
+   "level": "core",
+   "lc": {
+    "slug": "two-sum-iv-input-is-a-bst",
+    "num": 653,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/two-sum-in-bst?source=strivers-sde-sheet",
+   "video": "https://youtu.be/ssL3sHwPeb4",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/two-sum-in-bst",
+   "tags": [
+    "Binary Search Trees",
+    "Two Pointer"
+   ]
+  },
+  {
+   "id": 128,
+   "topic": "Binary Search Tree Part-II",
+   "topicNo": 21,
+   "title": "BST iterator",
+   "slug": "bst-iterator",
+   "level": "core",
+   "lc": {
+    "slug": "binary-search-tree-iterator",
+    "num": 173,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/bst-iterator?source=strivers-sde-sheet",
+   "video": "https://youtu.be/D2jMcmxU4bs",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/binary-search-tree-iterator",
+   "tags": [
+    "Binary Search Trees",
+    "Tree DFS / Recursive Decomposition",
+    "Simulation / Implementation"
+   ]
+  },
+  {
+   "id": 129,
+   "topic": "Binary Search Tree Part-II",
+   "topicNo": 21,
+   "title": "Serialize and De-serialize BT",
+   "slug": "serialize-and-de-serialize-bt",
+   "level": "pro",
+   "lc": {
+    "slug": "serialize-and-deserialize-binary-tree",
+    "num": 297,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/serialize-and-de-serialize-bt?source=strivers-sde-sheet",
+   "video": "https://youtu.be/-YbXySKJsX8",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/serialize-and-deserialize-a-binary-tree",
+   "tags": [
+    "Binary Trees",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 130,
+   "topic": "Binary Trees[Miscellaneous]",
+   "topicNo": 22,
+   "title": "Binary Tree to Doubly Linked List",
+   "slug": "binary-tree-to-doubly-linked-list",
+   "level": "core",
+   "lc": {
+    "slug": "flatten-binary-tree-to-linked-list",
+    "num": 114,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/binary-tree-to-doubly-linked-list?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=sWf7k1x9XR4&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=39",
+   "article": null,
+   "tags": [
+    "Binary Trees",
+    "Linked List",
+    "Tree DFS / Recursive Decomposition"
+   ]
+  },
+  {
+   "id": 131,
+   "topic": "Binary Trees[Miscellaneous]",
+   "topicNo": 22,
+   "title": "Find Median in a Stream",
+   "slug": "find-median-in-a-stream",
+   "level": "pro",
+   "lc": {
+    "slug": "find-median-from-data-stream",
+    "num": 295,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/find-median-in-a-stream?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Heaps",
+    "Two Heaps",
+    "Priority Queue"
+   ]
+  },
+  {
+   "id": 132,
+   "topic": "Binary Trees[Miscellaneous]",
+   "topicNo": 22,
+   "title": "Kth largest element in a stream of running integers",
+   "slug": "kth-largest-element-in-a-stream-of-running-integers",
+   "level": "pro",
+   "lc": {
+    "slug": "kth-largest-element-in-a-stream",
+    "num": 703,
+    "diff": "Easy",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/kth-largest-element-in-a-stream-of-running-integers?source=strivers-sde-sheet",
+   "video": null,
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/kth-largest-element-stream",
+   "tags": [
+    "Heaps",
+    "Binary Search Trees",
+    "Top K Elements",
+    "Priority Queue"
+   ]
+  },
+  {
+   "id": 133,
+   "topic": "Binary Trees[Miscellaneous]",
+   "topicNo": 22,
+   "title": "Distinct Numbers in Each Subarray",
+   "slug": "distinct-numbers-in-each-subarray",
+   "level": "core",
+   "lc": {
+    "slug": "distinct-numbers-in-each-subarray",
+    "num": 1852,
+    "diff": "Medium",
+    "paid": true,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/distinct-numbers-in-each-subarray?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Arrays",
+    "Hashing",
+    "Sliding Window"
+   ]
+  },
+  {
+   "id": 134,
+   "topic": "Graph",
+   "topicNo": 23,
+   "title": "Clone Graph",
+   "slug": "clone-graph",
+   "level": "core",
+   "lc": {
+    "slug": "clone-graph",
+    "num": 133,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/clone-graph?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Graphs",
+    "Hashing",
+    "Graph DFS / Connected Components"
+   ]
+  },
+  {
+   "id": 135,
+   "topic": "Graph",
+   "topicNo": 23,
+   "title": "Traversal Techniques",
+   "slug": "traversal-techniques",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/traversal-techniques?source=strivers-sde-sheet",
+   "video": "https://youtu.be/Qzf1a--rhp8",
+   "article": null,
+   "tags": [
+    "Graphs",
+    "Graph DFS / Connected Components"
+   ]
+  },
+  {
+   "id": 136,
+   "topic": "Graph",
+   "topicNo": 23,
+   "title": "Bipartite graph",
+   "slug": "bipartite-graph",
+   "level": "core",
+   "lc": {
+    "slug": "is-graph-bipartite",
+    "num": 785,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/bipartite-graph?source=strivers-sde-sheet",
+   "video": "https://youtu.be/KG5YFfR0j8A",
+   "article": null,
+   "tags": [
+    "Graphs",
+    "Graph DFS / Connected Components"
+   ]
+  },
+  {
+   "id": 137,
+   "topic": "Graph Part-II",
+   "topicNo": 24,
+   "title": "Dijkstra's algorithm",
+   "slug": "dijkstra's-algorithm",
+   "level": "core",
+   "lc": {
+    "slug": "network-delay-time",
+    "num": 743,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": true
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/dijkstra%27s-algorithm?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=rp1SMw7HSO8&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=35",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/dijkstras-algorithm",
+   "tags": [
+    "Graphs",
+    "Heaps",
+    "Shortest Path",
+    "Priority Queue"
+   ]
+  },
+  {
+   "id": 138,
+   "topic": "Graph Part-II",
+   "topicNo": 24,
+   "title": "Bellman ford algorithm",
+   "slug": "bellman-ford-algorithm",
+   "level": "pro",
+   "lc": {
+    "slug": "cheapest-flights-within-k-stops",
+    "num": 787,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": true
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/bellman-ford-algorithm?source=strivers-sde-sheet",
+   "video": "https://youtu.be/0vVofAhAYjc",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/bellman-ford-algorithm",
+   "tags": [
+    "Graphs",
+    "Shortest Path"
+   ]
+  },
+  {
+   "id": 139,
+   "topic": "Dynamic Programming",
+   "topicNo": 25,
+   "title": "Longest Increasing Subsequence",
+   "slug": "longest-increasing-subsequence",
+   "level": "core",
+   "lc": {
+    "slug": "longest-increasing-subsequence",
+    "num": 300,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/longest-increasing-subsequence?source=strivers-sde-sheet",
+   "video": "https://youtu.be/on2hvxBXJH4",
+   "article": null,
+   "tags": [
+    "Dynamic Programming",
+    "Arrays",
+    "Binary Search",
+    "LIS / Sequence DP",
+    "Lower Bound / Upper Bound"
+   ]
+  },
+  {
+   "id": 140,
+   "topic": "Dynamic Programming",
+   "topicNo": 25,
+   "title": "Longest common subsequence",
+   "slug": "longest-common-subsequence",
+   "level": "core",
+   "lc": {
+    "slug": "longest-common-subsequence",
+    "num": 1143,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/longest-common-subsequence?source=strivers-sde-sheet",
+   "video": "https://youtu.be/-zI4mrF2Pb4",
+   "article": null,
+   "tags": [
+    "Dynamic Programming",
+    "Strings",
+    "String DP"
+   ]
+  },
+  {
+   "id": 141,
+   "topic": "Dynamic Programming",
+   "topicNo": 25,
+   "title": "0 and 1 Knapsack",
+   "slug": "0-and-1-knapsack",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/0-and-1-knapsack?source=strivers-sde-sheet",
+   "video": "https://youtu.be/GqOmJHQZivw",
+   "article": null,
+   "tags": [
+    "Dynamic Programming",
+    "Arrays",
+    "Knapsack / Subset DP"
+   ]
+  },
+  {
+   "id": 142,
+   "topic": "Dynamic Programming",
+   "topicNo": 25,
+   "title": "Edit distance",
+   "slug": "edit-distance",
+   "level": "pro",
+   "lc": {
+    "slug": "edit-distance",
+    "num": 72,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/edit-distance?source=strivers-sde-sheet",
+   "video": "https://youtu.be/fJaKO8FbDdo",
+   "article": null,
+   "tags": [
+    "Dynamic Programming",
+    "Strings",
+    "String DP"
+   ]
+  },
+  {
+   "id": 143,
+   "topic": "Dynamic Programming",
+   "topicNo": 25,
+   "title": "Maximum Sum Increasing Subsequence",
+   "slug": "maximum-sum-increasing-subsequence",
+   "level": "core",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/maximum-sum-increasing-subsequence?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Dynamic Programming",
+    "LIS / Sequence DP"
+   ]
+  },
+  {
+   "id": 144,
+   "topic": "Dynamic Programming",
+   "topicNo": 25,
+   "title": "Matrix chain multiplication",
+   "slug": "matrix-chain-multiplication",
+   "level": "pro",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/matrix-chain-multiplication?source=strivers-sde-sheet",
+   "video": "https://youtu.be/vRVfmbCFW7Y",
+   "article": null,
+   "tags": [
+    "Dynamic Programming",
+    "Arrays",
+    "Interval / Partition DP"
+   ]
+  },
+  {
+   "id": 145,
+   "topic": "Dynamic Programming Part-II",
+   "topicNo": 26,
+   "title": "Coin change II",
+   "slug": "coin-change-ii",
+   "level": "pro",
+   "lc": {
+    "slug": "coin-change-ii",
+    "num": 518,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/coin-change-ii?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=HgyouUi11zk",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/coin-change-ii-combinations",
+   "tags": [
+    "Dynamic Programming",
+    "Arrays",
+    "Knapsack / Subset DP"
+   ]
+  },
+  {
+   "id": 146,
+   "topic": "Dynamic Programming Part-II",
+   "topicNo": 26,
+   "title": "Subset sum equals to target",
+   "slug": "subset-sum-equals-to-target",
+   "level": "core",
+   "lc": {
+    "slug": "partition-equal-subset-sum",
+    "num": 416,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": true
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/subset-sum-equals-to-target?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=rYkfBRtMJr8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=52",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/subset-sum-equal-to-target",
+   "tags": [
+    "Dynamic Programming",
+    "Knapsack / Subset DP"
+   ]
+  },
+  {
+   "id": 147,
+   "topic": "Dynamic Programming Part-II",
+   "topicNo": 26,
+   "title": "Rod cutting problem",
+   "slug": "rod-cutting-problem",
+   "level": "pro",
+   "lc": null,
+   "tuf": "https://takeuforward.org/practice/dsa/rod-cutting-problem?source=strivers-sde-sheet",
+   "video": "https://youtu.be/mO8XpGoJwuo",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/rod-cutting-problem",
+   "tags": [
+    "Dynamic Programming",
+    "Arrays",
+    "Knapsack / Subset DP"
+   ]
+  },
+  {
+   "id": 148,
+   "topic": "Dynamic Programming Part-II",
+   "topicNo": 26,
+   "title": "Super Egg Drop",
+   "slug": "super-egg-drop",
+   "level": "pro",
+   "lc": {
+    "slug": "super-egg-drop",
+    "num": 887,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/super-egg-drop?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Dynamic Programming",
+    "Mathematics",
+    "Multi-State DP"
+   ]
+  },
+  {
+   "id": 149,
+   "topic": "Dynamic Programming Part-II",
+   "topicNo": 26,
+   "title": "Word Break",
+   "slug": "word-break",
+   "level": "core",
+   "lc": {
+    "slug": "word-break",
+    "num": 139,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/word-break?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Dynamic Programming",
+    "Strings",
+    "Hashing",
+    "String DP"
+   ]
+  },
+  {
+   "id": 150,
+   "topic": "Dynamic Programming Part-II",
+   "topicNo": 26,
+   "title": "Maximum Profit in Job Scheduling",
+   "slug": "maximum-profit-in-job-scheduling",
+   "level": "pro",
+   "lc": {
+    "slug": "maximum-profit-in-job-scheduling",
+    "num": 1235,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/maximum-profit-in-job-scheduling?source=strivers-sde-sheet",
+   "video": null,
+   "article": null,
+   "tags": [
+    "Dynamic Programming",
+    "Arrays",
+    "Linear DP"
+   ]
+  },
+  {
+   "id": 151,
+   "topic": "Trie",
+   "topicNo": 27,
+   "title": "Trie Implementation and Operations",
+   "slug": "trie-implementation-and-operations",
+   "level": "core",
+   "lc": {
+    "slug": "implement-trie-prefix-tree",
+    "num": 208,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/trie-implementation-and-operations?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=dBGUmUQhjaM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/trie-implementation",
+   "tags": [
+    "Tries",
+    "Prefix Matching"
+   ]
+  },
+  {
+   "id": 152,
+   "topic": "Trie",
+   "topicNo": 27,
+   "title": "Trie Implementation and Advanced Operations",
+   "slug": "trie-implementation-and-advanced-operations",
+   "level": "core",
+   "lc": {
+    "slug": "implement-trie-ii-prefix-tree",
+    "num": 1804,
+    "diff": "Medium",
+    "paid": true,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/trie-implementation-and-advanced-operations?source=strivers-sde-sheet",
+   "video": null,
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/trie-ii-count-words-erase",
+   "tags": [
+    "Tries",
+    "Prefix Matching"
+   ]
+  },
+  {
+   "id": 153,
+   "topic": "Trie",
+   "topicNo": 27,
+   "title": "Longest Word with All Prefixes",
+   "slug": "longest-word-with-all-prefixes",
+   "level": "core",
+   "lc": {
+    "slug": "longest-word-with-all-prefixes",
+    "num": 1858,
+    "diff": "Medium",
+    "paid": true,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/longest-word-with-all-prefixes?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=AWnBa91lThI&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=3",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/longest-word-with-all-prefixes",
+   "tags": [
+    "Tries",
+    "Arrays",
+    "Strings",
+    "Prefix Matching"
+   ]
+  },
+  {
+   "id": 154,
+   "topic": "Trie",
+   "topicNo": 27,
+   "title": "Number of distinct substrings in a string",
+   "slug": "number-of-distinct-substrings-in-a-string",
+   "level": "pro",
+   "lc": {
+    "slug": "number-of-distinct-substrings-in-a-string",
+    "num": 1698,
+    "diff": "Medium",
+    "paid": true,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/number-of-distinct-substrings-in-a-string?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=RV0QeTyHZxo&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=4",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/number-of-distinct-substrings-in-a-string",
+   "tags": [
+    "Tries",
+    "Strings",
+    "Prefix Matching"
+   ]
+  },
+  {
+   "id": 155,
+   "topic": "Trie",
+   "topicNo": 27,
+   "title": "Maximum XOR of two numbers in an array",
+   "slug": "maximum-xor-of-two-numbers-in-an-array",
+   "level": "core",
+   "lc": {
+    "slug": "maximum-xor-of-two-numbers-in-an-array",
+    "num": 421,
+    "diff": "Medium",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/maximum-xor-of-two-numbers-in-an-array?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=EIhAwfHubE8&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=6",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/maximum-xor-of-two-numbers-in-an-array",
+   "tags": [
+    "Tries",
+    "Hashing",
+    "Bit Manipulation",
+    "Bitwise XOR"
+   ]
+  },
+  {
+   "id": 156,
+   "topic": "Trie",
+   "topicNo": 27,
+   "title": "Maximum Xor with an element from an array",
+   "slug": "maximum-xor-with-an-element-from-an-array",
+   "level": "pro",
+   "lc": {
+    "slug": "maximum-xor-with-an-element-from-array",
+    "num": 1707,
+    "diff": "Hard",
+    "paid": false,
+    "equivalent": false
+   },
+   "tuf": "https://takeuforward.org/practice/dsa/maximum-xor-with-an-element-from-an-array?source=strivers-sde-sheet",
+   "video": "https://www.youtube.com/watch?v=Q8LhG9Pi5KM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=7",
+   "article": "https://takeuforward.org/blogs/data-structure-and-algorithm/maximum-xor-queries-trie",
+   "tags": [
+    "Tries",
+    "Arrays",
+    "Bit Manipulation",
+    "Bitwise XOR"
+   ]
+  }
+ ]
+}

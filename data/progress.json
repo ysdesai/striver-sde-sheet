@@ -1,0 +1,14 @@
+{
+ "version": 1,
+ "config": {
+  "start_date": "2026-10-28",
+  "target_date": "2026-12-20",
+  "timezone": "America/Los_Angeles",
+  "leetcode_username": "",
+  "github_repo": "ysdesai/striver-sde-sheet"
+ },
+ "problems": {},
+ "sync": {
+  "last_ts": 0
+ }
+}

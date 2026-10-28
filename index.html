@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SDE Sheet Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f6f7f9;--surface:#ffffff;--surface-2:#f1f3f5;--border:#e3e6ea;--border-strong:#cfd4da;
+  --text:#14171a;--text-2:#4b535c;--muted:#6b737c;
+  --accent:#2a78d6;--accent-ink:#1c5cab;--accent-soft:#e6f0fc;--on-accent:#fff;
+  --track:#e8ebee;
+  --good:#1a7f37;--good-soft:#e6f4ea;--warn:#9a6700;--warn-soft:#fff4d6;--bad:#c62828;--bad-soft:#fdecec;
+  --e:#1a7f37;--m:#9a6700;--h:#c62828;
+  --heat-0:#ebedf0;--heat-1:#b7d3f6;--heat-2:#6da7ec;--heat-3:#2a78d6;--heat-4:#184f95;
+  --shadow:0 1px 2px rgba(16,24,40,.05),0 1px 3px rgba(16,24,40,.06);
+  --radius:12px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0f1114;--surface:#171a1e;--surface-2:#1e2227;--border:#2a2f36;--border-strong:#3a414a;
+    --text:#eef0f2;--text-2:#b9c0c7;--muted:#8c949c;
+    --accent:#3987e5;--accent-ink:#86b6ef;--accent-soft:#16263b;--on-accent:#fff;
+    --track:#262b31;
+    --good:#3fb950;--good-soft:#16281b;--warn:#d29922;--warn-soft:#2b2312;--bad:#f06b6b;--bad-soft:#2f1717;
+    --e:#3fb950;--m:#d29922;--h:#f06b6b;
+    --heat-0:#21262d;--heat-1:#104281;--heat-2:#1c5cab;--heat-3:#3987e5;--heat-4:#86b6ef;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0f1114;--surface:#171a1e;--surface-2:#1e2227;--border:#2a2f36;--border-strong:#3a414a;
+  --text:#eef0f2;--text-2:#b9c0c7;--muted:#8c949c;
+  --accent:#3987e5;--accent-ink:#86b6ef;--accent-soft:#16263b;--on-accent:#fff;
+  --track:#262b31;
+  --good:#3fb950;--good-soft:#16281b;--warn:#d29922;--warn-soft:#2b2312;--bad:#f06b6b;--bad-soft:#2f1717;
+  --e:#3fb950;--m:#d29922;--h:#f06b6b;
+  --heat-0:#21262d;--heat-1:#104281;--heat-2:#1c5cab;--heat-3:#3987e5;--heat-4:#86b6ef;
+  --shadow:none;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0}
+body{background:var(--bg);color:var(--text);font:14px/1.45 Inter,system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent-ink);text-decoration:none}
+a:hover{text-decoration:underline}
+button,input,select,textarea{font:inherit;color:inherit}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1240px;margin:0 auto;padding:20px 16px 64px}
+
+/* header */
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.brand{display:flex;flex-direction:column;margin-right:auto;min-width:0}
+.brand h1{font-size:20px;font-weight:700;margin:0;letter-spacing:-.01em}
+.brand small{color:var(--muted)}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;background:var(--surface);border:1px solid var(--border);color:var(--text-2);font-size:12.5px;white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.dot.ok{background:var(--good)}.dot.busy{background:var(--warn)}.dot.err{background:var(--bad)}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border-strong);background:var(--surface);padding:7px 12px;border-radius:8px;cursor:pointer;font-weight:500;font-size:13px;white-space:nowrap}
+.btn:hover{background:var(--surface-2)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{filter:brightness(1.07)}
+.btn.ghost{border-color:transparent;background:transparent}
+.btn.danger{color:var(--bad)}
+.btn:disabled{opacity:.5;cursor:default}
+.icon-btn{width:34px;height:34px;justify-content:center;padding:0}
+
+.banner{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--accent-soft);border:1px solid var(--border);border-radius:var(--radius);padding:10px 14px;margin-bottom:16px;color:var(--text-2)}
+.banner b{color:var(--text)}
+
+/* cards */
+.grid{display:grid;gap:14px}
+.kpis{grid-template-columns:repeat(5,minmax(0,1fr));margin-bottom:14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;min-width:0}
+.card h2{font-size:13px;font-weight:600;margin:0 0 12px;color:var(--text);display:flex;align-items:center;gap:8px}
+.card h2 .sub{color:var(--muted);font-weight:500;margin-left:auto;font-size:12px}
+.kpi .label{color:var(--muted);font-size:12px;font-weight:500}
+.kpi .value{font-size:28px;font-weight:700;letter-spacing:-.02em;margin-top:4px;line-height:1.1}
+.kpi .value small{font-size:14px;font-weight:600;color:var(--muted);margin-left:2px}
+.kpi .hint{color:var(--muted);font-size:12px;margin-top:4px}
+.kpi.solved{display:flex;align-items:center;gap:14px}
+.status{display:inline-flex;align-items:center;gap:5px;font-weight:600;font-size:12px;padding:2px 8px;border-radius:999px}
+.status.good{color:var(--good);background:var(--good-soft)}
+.status.warn{color:var(--warn);background:var(--warn-soft)}
+.status.bad{color:var(--bad);background:var(--bad-soft)}
+
+.row2{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);margin-bottom:14px}
+.row3{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);margin-bottom:14px}
+
+/* today lists */
+.list{display:flex;flex-direction:column}
+.item{display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--border)}
+.item:first-child{border-top:0}
+.item .t{flex:1;min-width:0;cursor:pointer}
+.item .t b{font-weight:600;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item .t span{color:var(--muted);font-size:12px}
+.section-label{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;margin:14px 0 4px;display:flex;align-items:center;gap:8px}
+.section-label:first-of-type{margin-top:0}
+.empty{color:var(--muted);padding:8px 0;font-size:13px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:600;padding:2px 7px;border-radius:6px;border:1px solid var(--border);color:var(--text-2);background:var(--surface);white-space:nowrap}
+a.chip:hover{text-decoration:none;border-color:var(--border-strong);background:var(--surface-2)}
+.chip.E{color:var(--e)}.chip.M{color:var(--m)}.chip.H{color:var(--h)}
+.lvl{font-size:11px;font-weight:600;color:var(--muted);text-transform:capitalize}
+.goalbar{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.goalbar .meter{flex:1}
+
+/* meters */
+.meter{height:8px;border-radius:4px;background:var(--track);overflow:hidden}
+.meter>i{display:block;height:100%;background:var(--accent);border-radius:4px;min-width:0}
+.topics{columns:3;column-gap:28px}
+.topics .trow{break-inside:avoid;margin-bottom:6px}
+.trow{display:grid;grid-template-columns:minmax(0,1fr) 90px 40px;align-items:center;gap:10px;font-size:12.5px;cursor:pointer;padding:2px 0;border-radius:4px}
+.trow:hover .tn{color:var(--accent-ink)}
+.trow .tn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.trow .tc{text-align:right;color:var(--muted)}
+.levels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.levels .trow,#mastery .trow{grid-template-columns:70px minmax(0,1fr) 46px;cursor:default}
+
+/* heatmap & chart */
+.heat-wrap{overflow-x:auto}
+.heat-legend{display:flex;align-items:center;gap:4px;justify-content:flex-end;color:var(--muted);font-size:11px;margin-top:6px}
+.heat-legend i{width:11px;height:11px;border-radius:2px;display:inline-block}
+.streaks{display:flex;gap:22px;margin-bottom:10px}
+.streaks div{display:flex;flex-direction:column}
+.streaks b{font-size:20px}
+.streaks span{color:var(--muted);font-size:12px}
+svg text{font-family:Inter,system-ui,sans-serif}
+.tip{position:fixed;pointer-events:none;z-index:50;background:var(--text);color:var(--bg);padding:6px 9px;border-radius:6px;font-size:12px;line-height:1.35;box-shadow:0 4px 12px rgba(0,0,0,.2);opacity:0;transition:opacity .08s;max-width:240px}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--text-2);margin-bottom:6px;flex-wrap:wrap}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:14px;height:0;border-top:2px solid var(--accent);display:inline-block}
+.legend i.plan{border-top:2px dashed var(--muted)}
+.legend i.proj{border-top:2px dotted var(--accent)}
+
+/* table */
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.toolbar input[type=search]{flex:1;min-width:180px}
+.field{border:1px solid var(--border-strong);background:var(--surface);border-radius:8px;padding:7px 10px;font-size:13px}
+.seg{display:inline-flex;border:1px solid var(--border-strong);border-radius:8px;overflow:hidden;flex-wrap:wrap}
+.seg button{border:0;background:var(--surface);padding:7px 10px;cursor:pointer;font-size:12.5px;font-weight:500;border-right:1px solid var(--border)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent-ink)}
+table{width:100%;border-collapse:collapse}
+th{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600;text-align:left;padding:8px;border-bottom:1px solid var(--border)}
+td{padding:8px;border-bottom:1px solid var(--border);vertical-align:middle}
+tbody tr.prob{cursor:pointer}
+tbody tr.prob:hover td{background:var(--surface-2)}
+tr.group td{background:var(--surface-2);font-weight:600;cursor:pointer;user-select:none;padding:9px 8px}
+tr.group .g{display:flex;align-items:center;gap:10px}
+tr.group .meter{width:120px}
+tr.group .c{color:var(--muted);font-weight:500;font-size:12.5px}
+.caret{display:inline-block;transition:transform .15s;color:var(--muted);width:12px}
+tr.group.closed .caret{transform:rotate(-90deg)}
+.st{width:22px;height:22px;border-radius:50%;border:2px solid var(--border-strong);display:inline-flex;align-items:center;justify-content:center;font-size:12px;flex:none}
+.st.solved{background:var(--accent);border-color:var(--accent);color:#fff}
+.st.due{background:var(--warn-soft);border-color:var(--warn);color:var(--warn)}
+.st.mastered{background:var(--good);border-color:var(--good);color:#fff}
+.links{display:flex;gap:5px;flex-wrap:wrap}
+.pnum{color:var(--muted);width:34px}
+.ptitle{font-weight:500}
+.ptitle .note-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-left:6px;vertical-align:middle}
+.rev{white-space:nowrap;color:var(--text-2);font-size:12.5px}
+.rev.overdue{color:var(--warn);font-weight:600}
+
+/* drawer */
+.scrim{position:fixed;inset:0;background:rgba(10,12,15,.4);opacity:0;pointer-events:none;transition:opacity .15s;z-index:30}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(460px,100%);background:var(--surface);border-left:1px solid var(--border);z-index:40;transform:translateX(100%);transition:transform .2s ease;display:flex;flex-direction:column}
+.drawer.on{transform:none}
+.drawer header{padding:16px 18px;border-bottom:1px solid var(--border);margin:0;align-items:flex-start}
+.drawer .body{padding:16px 18px;overflow:auto;flex:1;display:flex;flex-direction:column;gap:18px}
+.drawer h3{margin:0;font-size:17px;line-height:1.3}
+.drawer .meta{color:var(--muted);font-size:12.5px;margin-top:2px}
+.drawer label{font-size:12px;font-weight:600;color:var(--text-2);display:block;margin-bottom:6px}
+.rate{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.rate button{border:1px solid var(--border-strong);background:var(--surface);border-radius:10px;padding:10px 8px;cursor:pointer;text-align:left}
+.rate button:hover{border-color:var(--accent);background:var(--accent-soft)}
+.rate button b{display:block;font-size:13px}
+.rate button span{font-size:11.5px;color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.facts div{background:var(--surface-2);border-radius:8px;padding:8px 10px}
+.facts span{display:block;color:var(--muted);font-size:11px}
+.facts b{font-size:13.5px}
+.steps{display:flex;gap:4px;margin-top:4px}
+.steps i{flex:1;height:6px;border-radius:3px;background:var(--track)}
+.steps i.on{background:var(--good)}
+textarea{width:100%;min-height:140px;resize:vertical;border:1px solid var(--border-strong);background:var(--surface);border-radius:8px;padding:10px;font:13px/1.5 'JetBrains Mono',ui-monospace,monospace}
+.hist{font-size:12.5px;color:var(--text-2);display:flex;flex-direction:column;gap:4px}
+.inline{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.inline .field{width:auto}
+
+/* modal */
+dialog{border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text);padding:0;width:min(520px,calc(100% - 32px))}
+dialog::backdrop{background:rgba(10,12,15,.45)}
+dialog form{padding:20px;display:flex;flex-direction:column;gap:14px}
+dialog h3{margin:0}
+dialog .field{width:100%}
+dialog p{margin:0;color:var(--muted);font-size:12.5px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--bg);padding:9px 14px;border-radius:8px;font-size:13px;opacity:0;transition:all .2s;z-index:60;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%)}
+
+@media (max-width:1080px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:1000px){.topics{columns:2}}
+@media (max-width:860px){.row2,.row3{grid-template-columns:minmax(0,1fr)}.topics{columns:1}}
+@media (max-width:640px){
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kpi.solved{grid-column:1/-1}
+  .levels{grid-template-columns:minmax(0,1fr)}
+  .hide-sm{display:none}
+  td,th{padding:8px 5px}
+  tr.group .meter{width:60px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <h1>Striver's SDE Sheet</h1>
+      <small id="subtitle">Python · loading…</small>
+    </div>
+    <span class="pill" id="syncPill"><span class="dot" id="syncDot"></span><span id="syncText">Loading</span></span>
+    <button class="btn" id="lcSyncBtn" title="Run the LeetCode sync GitHub Action now" hidden>↻ Sync LeetCode</button>
+    <button class="btn" id="settingsBtn">⚙ Settings</button>
+    <button class="btn icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <div class="banner" id="banner" hidden></div>
+
+  <section class="grid kpis" id="kpis"></section>
+
+  <section class="grid row2">
+    <div class="card" id="todayCard"></div>
+    <div class="card">
+      <h2>Activity <span class="sub">solves + revisions</span></h2>
+      <div class="streaks" id="streaks"></div>
+      <div class="heat-wrap" id="heatmap"></div>
+      <div class="heat-legend">Less <i style="background:var(--heat-0)"></i><i style="background:var(--heat-1)"></i><i style="background:var(--heat-2)"></i><i style="background:var(--heat-3)"></i><i style="background:var(--heat-4)"></i> More</div>
+      <h2 style="margin-top:18px">Revision forecast <span class="sub">next 14 days</span></h2>
+      <div id="forecast"></div>
+    </div>
+  </section>
+
+  <section class="grid row3">
+    <div class="card">
+      <h2>Plan vs actual <span class="sub" id="burnSub"></span></h2>
+      <div class="legend"><span><i></i>Solved</span><span><i class="plan"></i>Plan to target</span><span><i class="proj"></i>Projection at current pace</span></div>
+      <div id="burnup"></div>
+    </div>
+    <div class="card">
+      <h2>By difficulty</h2>
+      <div class="levels" id="levels"></div>
+      <h2 style="margin-top:22px">Mastery</h2>
+      <div id="mastery"></div>
+    </div>
+  </section>
+
+  <section class="card" style="margin-bottom:14px">
+    <h2>By topic <span class="sub">click a topic to filter the list</span></h2>
+    <div class="topics" id="topics"></div>
+  </section>
+
+  <section class="card" id="problemsCard">
+    <h2>All problems <span class="sub" id="countSub"></span></h2>
+    <div class="toolbar">
+      <input type="search" class="field" id="q" placeholder="Search problems, tags…" aria-label="Search">
+      <select class="field" id="fTopic" aria-label="Topic"></select>
+      <select class="field" id="fLevel" aria-label="Difficulty">
+        <option value="">All levels</option><option value="basic">Basic</option><option value="core">Core</option><option value="pro">Pro</option>
+        <option value="E">LC Easy</option><option value="M">LC Medium</option><option value="H">LC Hard</option>
+      </select>
+      <div class="seg" id="fStatus" role="group" aria-label="Status"></div>
+    </div>
+    <table>
+      <thead><tr><th style="width:34px"></th><th class="hide-sm">#</th><th>Problem</th><th>Practice</th><th class="hide-sm">Learn</th><th class="hide-sm">Level</th><th>Review</th></tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </section>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true"></aside>
+<div class="tip" id="tip"></div>
+<div class="toast" id="toast"></div>
+
+<dialog id="settings">
+  <form method="dialog" id="settingsForm">
+    <h3>Settings</h3>
+    <div>
+      <label for="sToken">GitHub token <span style="font-weight:400;color:var(--muted)">(stored only in this browser)</span></label>
+      <input class="field" id="sToken" type="password" autocomplete="off" placeholder="github_pat_…">
+      <p style="margin-top:6px">Create a <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">fine-grained token</a> with access to <b>only this repository</b>. Give it <b>Contents: Read and write</b> to save progress, and <b>Actions: Read and write</b> for the Sync LeetCode button.</p>
+    </div>
+    <div>
+      <label for="sRepo">Repository</label>
+      <input class="field" id="sRepo" placeholder="owner/repo">
+    </div>
+    <div>
+      <label for="sLc">LeetCode username</label>
+      <input class="field" id="sLc" placeholder="your-handle">
+      <p style="margin-top:6px">Accepted submissions on or after the start date are auto-marked as solved. Solves from before that date are ignored.</p>
+    </div>
+    <div class="two">
+      <div><label for="sStart">Fresh-start date</label><input class="field" id="sStart" type="date"></div>
+      <div><label for="sTarget">Target finish date</label><input class="field" id="sTarget" type="date"></div>
+    </div>
+    <div class="inline" style="justify-content:flex-end">
+      <button class="btn" value="cancel" formnovalidate>Cancel</button>
+      <button class="btn primary" value="save" id="settingsSave">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+"use strict";
+// ---- spaced repetition (keep in sync with scripts/tracker.py) ----
+const INTERVALS = [1, 3, 7, 21, 45];
+const RATINGS = {
+  easy: { label: "Easy", hint: "Solo, quick" },
+  ok:   { label: "Struggled", hint: "Solo, slow" },
+  hard: { label: "Needed help", hint: "Hint / video" },
+};
+const nextStep = (step, r) => r === "hard" ? 0 : step + (r === "easy" ? 2 : 1);
+const dueFor = (iso, step) => step >= INTERVALS.length ? null : addDays(iso, INTERVALS[step]);
+
+// ---- state ----
+const S = {
+  P: [], topics: [], byId: new Map(),
+  prog: null, sha: null, token: "", repo: "",
+  saving: false, dirty: false, msgs: [], error: "",
+  openId: null, closed: new Set(),
+  f: { q: "", topic: "", level: "", status: "all" },
+};
+const LS = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } };
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+// ---- dates (all in the configured timezone, as ISO yyyy-mm-dd) ----
+function todayISO() {
+  const tz = S.prog?.config?.timezone;
+  try { return new Date().toLocaleDateString("en-CA", tz ? { timeZone: tz } : {}); }
+  catch (e) { return new Date().toLocaleDateString("en-CA"); }
+}
+function addDays(iso, n) { const d = new Date(iso + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
+function diffDays(a, b) { return Math.round((new Date(b + "T12:00:00Z") - new Date(a + "T12:00:00Z")) / 864e5); }
+function fmtDate(iso, opts = { month: "short", day: "numeric" }) { return iso ? new Date(iso + "T12:00:00Z").toLocaleDateString(undefined, { ...opts, timeZone: "UTC" }) : "—"; }
+function relDay(iso) {
+  const d = diffDays(todayISO(), iso);
+  if (d === 0) return "today"; if (d === 1) return "tomorrow"; if (d === -1) return "yesterday";
+  return d < 0 ? `${-d}d overdue` : `in ${d}d`;
+}
+
+// ---- entries ----
+const E = id => S.prog.problems[String(id)] || {};
+const isSolved = id => !!E(id).solved;
+function stateOf(id) {
+  const e = E(id);
+  if (!e.solved) return "todo";
+  if ((e.step ?? 0) >= INTERVALS.length) return "mastered";
+  if (e.due && e.due <= todayISO()) return "due";
+  return "solved";
+}
+function touch(id, patch, msg) {
+  const k = String(id);
+  S.prog.problems[k] = { ...(S.prog.problems[k] || {}), ...patch, updated: new Date().toISOString() };
+  if (msg) S.msgs.push(msg);
+  saveSoon(); render();
+}
+function solve(id, rating, { on = todayISO(), mins = null, src = "manual" } = {}) {
+  const e = E(id), step = nextStep(-1, rating);
+  touch(id, { solved: on, src: e.src === "lc" ? "lc" : src, rating, rated: true, step, due: dueFor(on, step),
+              reviews: e.reviews || [], notes: e.notes || "", mins: mins ?? e.mins ?? null },
+        `${e.solved ? "rate" : "solve"} #${id} ${S.byId.get(id).title} (${RATINGS[rating].label})`);
+  toast(e.solved ? "Rating saved" : `Solved! Next review ${relDay(dueFor(on, step))}`);
+}
+function review(id, rating) {
+  const e = E(id), on = todayISO(), step = nextStep(e.step ?? 0, rating);
+  touch(id, { reviews: [...(e.reviews || []), { d: on, r: rating, src: "manual" }], step, due: dueFor(on, step) },
+        `revise #${id} ${S.byId.get(id).title} (${RATINGS[rating].label})`);
+  toast(step >= INTERVALS.length ? "Mastered ⭐" : `Next review ${relDay(dueFor(on, step))}`);
+}
+function unsolve(id) {
+  touch(id, { solved: null, step: null, due: null, rating: null, rated: null, reviews: [], src: null }, `reset #${id}`);
+}
+
+// ---- stats ----
+function computeStats() {
+  const t = todayISO(), cfg = S.prog.config, total = S.P.length;
+  const solvedList = S.P.filter(p => isSolved(p.id));
+  const days = {};
+  for (const e of Object.values(S.prog.problems)) {
+    if (e.solved) days[e.solved] = (days[e.solved] || 0) + 1;
+    for (const r of e.reviews || []) days[r.d] = (days[r.d] || 0) + 1;
+  }
+  const active = Object.keys(days).filter(d => days[d]).sort();
+  let best = 0, run = 0, prev = null;
+  for (const d of active) { run = prev && diffDays(prev, d) === 1 ? run + 1 : 1; best = Math.max(best, run); prev = d; }
+  let cur = 0, d = days[t] ? t : addDays(t, -1);
+  while (days[d]) { cur++; d = addDays(d, -1); }
+  const solved = solvedList.length, remaining = total - solved;
+  const start = cfg.start_date, target = cfg.target_date;
+  const elapsed = Math.max(diffDays(start, t) + 1, 1), plan = Math.max(diffDays(start, target) + 1, 1);
+  const daysLeft = Math.max(diffDays(t, target) + 1, 1);
+  const expected = Math.min(total, Math.round(total * elapsed / plan));
+  const pace = solved / elapsed;
+  const projected = !remaining ? t : pace ? addDays(t, Math.round(remaining / pace)) : null;
+  const solvedToday = solvedList.filter(p => E(p.id).solved === t).length;
+  const due = solvedList.filter(p => stateOf(p.id) === "due").sort((a, b) => E(a.id).due.localeCompare(E(b.id).due));
+  const mastered = solvedList.filter(p => stateOf(p.id) === "mastered").length;
+  const unrated = solvedList.filter(p => E(p.id).rated === false);
+  const needPerDay = remaining / daysLeft;
+  return { t, total, solved, remaining, days, cur, best, expected, pace, projected, daysLeft, needPerDay,
+           solvedToday, due, mastered, unrated, start, target, revisedToday: (days[t] || 0) - solvedToday };
+}
+
+// ---- render ----
+function render() {
+  if (!S.prog) return;
+  const st = computeStats();
+  $("#subtitle").textContent = `Python · ${S.total} problems · ${S.topics.length} topics`;
+  renderKPIs(st); renderToday(st); renderHeatmap(st); renderBurnup(st); renderBreakdowns(); renderTable();
+  if (S.openId) renderDrawer();
+  renderSync();
+}
+
+function ring(pct, size = 64) {
+  const r = size / 2 - 6, c = 2 * Math.PI * r;
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" aria-hidden="true">
+    <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="var(--track)" stroke-width="7"/>
+    <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="var(--accent)" stroke-width="7" stroke-linecap="round"
+      stroke-dasharray="${(c * pct).toFixed(1)} ${c.toFixed(1)}" transform="rotate(-90 ${size/2} ${size/2})"/>
+    <text x="50%" y="50%" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="var(--text)">${Math.round(pct * 100)}%</text></svg>`;
+}
+function renderKPIs(s) {
+  const onTrack = s.solved >= s.expected, ahead = s.solved - s.expected;
+  const finishOk = s.projected && s.projected <= s.target;
+  $("#kpis").innerHTML = `
+    <div class="card kpi solved">${ring(s.solved / s.total)}
+      <div><div class="label">Solved</div><div class="value num">${s.solved}<small>/ ${s.total}</small></div>
+      <div class="hint">${s.mastered} mastered · ${s.remaining} to go</div></div></div>
+    <div class="card kpi"><div class="label">Current streak</div><div class="value num">${s.cur}<small>days</small></div>
+      <div class="hint">Best ${s.best} days${s.days[s.t] ? " · today ✓" : s.cur ? " · keep it alive today" : ""}</div></div>
+    <div class="card kpi"><div class="label">Due for revision</div><div class="value num">${s.due.length}</div>
+      <div class="hint">${s.revisedToday > 0 ? `${s.revisedToday} revised today` : s.due.length ? "Clear these first" : "All caught up"}</div></div>
+    <div class="card kpi"><div class="label">Needed pace</div><div class="value num">${s.needPerDay.toFixed(1)}<small>/day</small></div>
+      <div class="hint">You average ${s.pace.toFixed(1)}/day · ${s.daysLeft}d left</div></div>
+    <div class="card kpi"><div class="label">Plan status</div>
+      <div style="margin-top:8px"><span class="status ${onTrack ? "good" : "bad"}">${onTrack ? "✓ On track" : "! Behind"}</span></div>
+      <div class="hint num" style="margin-top:8px">${ahead >= 0 ? `${ahead} ahead` : `${-ahead} behind`} the plan · finish ${s.projected ? `<b style="color:${finishOk ? "var(--good)" : "var(--bad)"}">${fmtDate(s.projected)}</b>` : "—"} vs ${fmtDate(s.target)}</div></div>`;
+}
+
+function links(p, compact = false) {
+  const out = [];
+  if (p.lc) out.push(`<a class="chip ${p.lc.diff[0]}" href="https://leetcode.com/problems/${p.lc.slug}/" target="_blank" rel="noopener" title="${p.lc.equivalent ? "LeetCode equivalent: " : "LeetCode "}${p.lc.num} · ${p.lc.diff}${p.lc.paid ? " · Premium" : ""}">${p.lc.equivalent ? "≈ " : ""}LC ${p.lc.num}${p.lc.paid ? " $" : ""}</a>`);
+  out.push(`<a class="chip" href="${esc(p.tuf)}" target="_blank" rel="noopener" title="takeuforward practice (Python supported)">TUF</a>`);
+  if (!compact) {
+    if (p.video) out.push(`<a class="chip" href="${esc(p.video)}" target="_blank" rel="noopener" title="Striver's video">▶</a>`);
+    if (p.article) out.push(`<a class="chip" href="${esc(p.article)}" target="_blank" rel="noopener" title="Article">Article</a>`);
+  }
+  return `<span class="links">${out.join("")}</span>`;
+}
+function itemRow(p, right) {
+  return `<div class="item"><div class="t" data-open="${p.id}"><b>${esc(p.title)}</b><span>#${p.id} · ${esc(p.topic)}</span></div>${links(p, true)}${right || ""}</div>`;
+}
+function renderToday(s) {
+  const goal = Math.max(1, Math.ceil(s.needPerDay));
+  const left = Math.max(goal - s.solvedToday, 0);
+  const todo = S.P.filter(p => !isSolved(p.id));
+  const next = todo.slice(0, Math.max(left, 1));
+  const parts = [`<h2>Today · ${fmtDate(s.t, { weekday: "long", month: "short", day: "numeric" })}</h2>
+    <div class="goalbar"><span class="num" style="font-weight:600">${s.solvedToday}/${goal}</span><span style="color:var(--muted);font-size:12.5px">new problems</span>
+      <div class="meter"><i style="width:${Math.min(100, s.solvedToday / goal * 100)}%"></i></div>
+      <span class="num" style="font-weight:600">${s.revisedToday}</span><span style="color:var(--muted);font-size:12.5px">revised</span></div>`];
+  if (s.unrated.length) {
+    parts.push(`<div class="section-label">Rate auto-synced solves <span class="status warn">${s.unrated.length}</span></div><div class="list">`
+      + s.unrated.slice(0, 5).map(p => itemRow(p, `<button class="btn" data-open="${p.id}">Rate</button>`)).join("") + `</div>`);
+  }
+  parts.push(`<div class="section-label">Revise <span class="status ${s.due.length ? "warn" : "good"}">${s.due.length}</span></div><div class="list">`
+    + (s.due.length ? s.due.slice(0, 6).map(p => itemRow(p, `<span class="rev ${E(p.id).due < s.t ? "overdue" : ""}">${relDay(E(p.id).due)}</span><button class="btn" data-open="${p.id}">Revise</button>`)).join("")
+      + (s.due.length > 6 ? `<div class="empty"><a href="#problemsCard" data-filter-status="due">+${s.due.length - 6} more due →</a></div>` : "")
+      : `<div class="empty">Nothing due. Revisions show up here 1, 3, 7, 21 and 45 days after each solve.</div>`) + `</div>`);
+  parts.push(`<div class="section-label">${left ? "Up next" : "Daily goal hit 🎉 — bonus"}</div><div class="list">`
+    + (next.length ? next.map(p => itemRow(p, `<button class="btn primary" data-open="${p.id}">Solve</button>`)).join("") : `<div class="empty">Sheet complete. Keep up the revisions.</div>`) + `</div>`);
+  $("#todayCard").innerHTML = parts.join("");
+}
+
+function renderHeatmap(s) {
+  $("#streaks").innerHTML = `<div><b class="num">${s.cur}</b><span>current streak</span></div><div><b class="num">${s.best}</b><span>best streak</span></div>
+    <div><b class="num">${Object.keys(s.days).length}</b><span>active days</span></div>`;
+  const cell = 13, gap = 3, left = 26, top = 16;
+  const weeks = Math.max(12, Math.min(53, Math.floor(((document.getElementById("heatmap").clientWidth || 500) - left) / (cell + gap))));
+  const dow = new Date(s.t + "T12:00:00Z").getUTCDay();
+  const start = addDays(s.t, -(dow + (weeks - 1) * 7));
+  const w = left + weeks * (cell + gap), h = top + 7 * (cell + gap);
+  let svg = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="Activity heatmap">`;
+  [[1, "Mon"], [3, "Wed"], [5, "Fri"]].forEach(([i, l]) => svg += `<text x="0" y="${top + i * (cell + gap) + 10}" font-size="9" fill="var(--muted)">${l}</text>`);
+  let lastM = -1;
+  for (let wk = 0; wk < weeks; wk++) for (let d = 0; d < 7; d++) {
+    const iso = addDays(start, wk * 7 + d);
+    if (iso > s.t) continue;
+    const m = +iso.slice(5, 7);
+    if (d === 0 && m !== lastM) { if (wk < weeks - 2 && +addDays(iso, 7).slice(5, 7) === m) svg += `<text x="${left + wk * (cell + gap)}" y="10" font-size="9" fill="var(--muted)">${fmtDate(iso, { month: "short" })}</text>`; lastM = m; }
+    const n = s.days[iso] || 0, lvl = !n ? 0 : n === 1 ? 1 : n <= 3 ? 2 : n <= 5 ? 3 : 4;
+    svg += `<rect x="${left + wk * (cell + gap)}" y="${top + d * (cell + gap)}" width="${cell}" height="${cell}" rx="2" fill="var(--heat-${lvl})"
+      ${iso === s.t ? `stroke="var(--text-2)" stroke-width="1"` : ""} data-tip="<b>${fmtDate(iso, { weekday: "short", month: "short", day: "numeric" })}</b><br>${n ? `${n} solved/revised` : "No activity"}"/>`;
+  }
+  $("#heatmap").innerHTML = svg + "</svg>";
+  renderForecast(s);
+}
+function renderForecast(s) {
+  const el = $("#forecast"), W = Math.max(el.clientWidth || 400, 240), H = 120, m = { l: 22, r: 4, t: 14, b: 20 };
+  const days = Array.from({ length: 14 }, (_, i) => addDays(s.t, i));
+  const counts = days.map((d, i) => S.P.filter(p => { const e = E(p.id); return e.solved && e.due && (i === 0 ? e.due <= d : e.due === d); }));
+  const max = Math.max(4, ...counts.map(c => c.length));
+  const bw = (W - m.l - m.r) / 14, y = v => m.t + (H - m.t - m.b) * (1 - v / max);
+  let g = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Revisions due per day for the next 14 days">`;
+  for (const v of [0, Math.round(max / 2), max]) g += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--border)"/><text x="${m.l - 5}" y="${y(v) + 3}" text-anchor="end" font-size="10" fill="var(--muted)">${v}</text>`;
+  counts.forEach((c, i) => {
+    const x = m.l + i * bw, n = c.length, names = c.slice(0, 6).map(p => esc(p.title)).join("<br>") + (n > 6 ? `<br>+${n - 6} more` : "");
+    if (n) g += `<path d="M${x + 2},${y(0)} V${y(n) + 3} q0,-3 3,-3 H${x + bw - 5} q3,0 3,3 V${y(0)}Z" fill="${i === 0 ? "var(--warn)" : "var(--accent)"}"/>`;
+    if (n && i === 0) g += `<text x="${x + bw / 2}" y="${y(n) - 4}" text-anchor="middle" font-size="10" font-weight="600" fill="var(--text)">${n}</text>`;
+    if (i % 2 === 0) g += `<text x="${x + bw / 2}" y="${H - 6}" text-anchor="middle" font-size="10" fill="var(--muted)">${i === 0 ? "Today" : fmtDate(days[i], { weekday: "narrow" })}</text>`;
+    g += `<rect x="${x}" y="${m.t}" width="${bw}" height="${H - m.t - m.b}" fill="transparent" data-tip="<b>${i === 0 ? "Today (incl. overdue)" : fmtDate(days[i], { weekday: "short", month: "short", day: "numeric" })}</b><br>${n} revision${n === 1 ? "" : "s"}${n ? "<br>" + names.replace(/"/g, "&quot;") : ""}"/>`;
+  });
+  el.innerHTML = g + "</svg>";
+}
+
+function renderBurnup(s) {
+  const el = $("#burnup"), W = Math.max(el.clientWidth || 600, 280), H = 230;
+  const m = { l: 34, r: 12, t: 10, b: 24 };
+  const end = [s.target, s.projected && s.projected < addDays(s.target, 120) ? s.projected : null, s.t].filter(Boolean).sort().pop();
+  const span = Math.max(diffDays(s.start, end), 1);
+  const x = iso => m.l + (W - m.l - m.r) * diffDays(s.start, iso) / span;
+  const y = v => m.t + (H - m.t - m.b) * (1 - v / s.total);
+  // cumulative solved per day
+  const perDay = {};
+  for (const p of S.P) { const d = E(p.id).solved; if (d) perDay[d < s.start ? s.start : d] = (perDay[d < s.start ? s.start : d] || 0) + 1; }
+  const pts = []; let c = 0;
+  for (let d = s.start; d <= s.t; d = addDays(d, 1)) { c += perDay[d] || 0; pts.push([d, c]); }
+  if (!pts.length) pts.push([s.start, 0]);
+  S.burn = { pts, x, y, s };
+  let g = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" id="burnSvg" role="img" aria-label="Cumulative problems solved versus plan">`;
+  for (const v of [0, 39, 78, 117, 156].map(v => Math.round(v * s.total / 156)))
+    g += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--border)"/><text x="${m.l - 6}" y="${y(v) + 3}" text-anchor="end" font-size="10" fill="var(--muted)">${v}</text>`;
+  const ticks = 5;
+  for (let i = 0; i <= ticks; i++) { const d = addDays(s.start, Math.round(span * i / ticks)); g += `<text x="${x(d)}" y="${H - 6}" text-anchor="${i === 0 ? "start" : i === ticks ? "end" : "middle"}" font-size="10" fill="var(--muted)">${fmtDate(d)}</text>`; }
+  g += `<line x1="${x(s.start)}" y1="${y(0)}" x2="${x(s.target)}" y2="${y(s.total)}" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+  g += `<line x1="${x(s.target)}" x2="${x(s.target)}" y1="${m.t}" y2="${H - m.b}" stroke="var(--border-strong)" stroke-dasharray="2 3"/><text x="${x(s.target) - 4}" y="${m.t + 10}" text-anchor="end" font-size="10" fill="var(--muted)">target</text>`;
+  if (s.projected && s.remaining && s.projected <= end)
+    g += `<line x1="${x(s.t)}" y1="${y(s.solved)}" x2="${x(s.projected)}" y2="${y(s.total)}" stroke="var(--accent)" stroke-width="2" stroke-dasharray="1 4" stroke-linecap="round"/>`;
+  const path = pts.map(([d, v], i) => `${i ? "L" : "M"}${x(d).toFixed(1)},${y(v).toFixed(1)}`).join("");
+  g += `<path d="${path} L${x(s.t).toFixed(1)},${y(0)} L${x(s.start)},${y(0)}Z" fill="var(--accent)" opacity=".08"/>`;
+  g += `<path d="${path}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/>`;
+  g += `<circle cx="${x(s.t)}" cy="${y(s.solved)}" r="4" fill="var(--accent)" stroke="var(--surface)" stroke-width="2"/>`;
+  g += `<text x="${Math.min(x(s.t) + 8, W - 40)}" y="${y(s.solved) - 8}" font-size="11" font-weight="600" fill="var(--text)">${s.solved}</text>`;
+  g += `<line id="burnX" y1="${m.t}" y2="${H - m.b}" stroke="var(--text-2)" stroke-width="1" opacity="0"/><circle id="burnDot" r="4" fill="var(--accent)" stroke="var(--surface)" stroke-width="2" opacity="0"/>`;
+  g += `<rect x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}" fill="transparent" id="burnHit"/></svg>`;
+  el.innerHTML = g;
+  $("#burnSub").textContent = `${fmtDate(s.start)} → ${fmtDate(s.target)}`;
+}
+
+function renderBreakdowns() {
+  const row = (label, done, n, attrs = "") => `<div class="trow" ${attrs}><span class="tn">${label}</span><div class="meter"><i style="width:${n ? done / n * 100 : 0}%"></i></div><span class="tc num">${done}/${n}</span></div>`;
+  const count = f => { const l = S.P.filter(f); return [l.filter(p => isSolved(p.id)).length, l.length]; };
+  $("#levels").innerHTML =
+    `<div><div class="section-label">Striver level</div>${["basic", "core", "pro"].map(l => row(l[0].toUpperCase() + l.slice(1), ...count(p => p.level === l))).join("")}</div>
+     <div><div class="section-label">LeetCode</div>${[["E", "Easy"], ["M", "Medium"], ["H", "Hard"]].map(([k, l]) => row(l, ...count(p => p.lc && p.lc.diff[0] === k))).join("")}</div>`;
+  // where each solved problem sits on the 5-step revision ladder
+  const solved = S.P.filter(p => isSolved(p.id)), ladder = [0, 0, 0, 0, 0, 0];
+  solved.forEach(p => ladder[Math.min(E(p.id).step ?? 0, 5)]++);
+  const lbl = ["Day 1", "Day 3", "Day 7", "Day 21", "Day 45", "Mastered"];
+  $("#mastery").innerHTML = `<p style="margin:0 0 10px;color:var(--muted);font-size:12px">Your solved problems by the revision interval they're on. A problem reaches the right side by passing every revision.</p>`
+    + lbl.map((l, i) => row(l, ladder[i], Math.max(solved.length, 1))).join("").replaceAll(`/${Math.max(solved.length, 1)}</span>`, "</span>");
+  $("#topics").innerHTML = S.topics.map(t => row(esc(t), ...count(p => p.topic === t), `data-topic="${esc(t)}" title="Show ${esc(t)}"`)).join("");
+}
+
+function matches(p) {
+  const f = S.f, st = stateOf(p.id);
+  if (f.topic && p.topic !== f.topic) return false;
+  if (f.level && !(p.level === f.level || (p.lc && p.lc.diff[0] === f.level))) return false;
+  if (f.status === "todo" && st !== "todo") return false;
+  if (f.status === "solved" && st === "todo") return false;
+  if (f.status === "due" && st !== "due") return false;
+  if (f.status === "mastered" && st !== "mastered") return false;
+  if (f.status === "unrated" && E(p.id).rated !== false) return false;
+  if (f.status === "notes" && !E(p.id).notes) return false;
+  if (f.q) {
+    const hay = `${p.id} ${p.title} ${p.topic} ${p.tags.join(" ")} ${p.lc ? p.lc.slug + " " + p.lc.num : ""} ${E(p.id).notes || ""}`.toLowerCase();
+    if (!f.q.toLowerCase().split(/\s+/).every(w => hay.includes(w))) return false;
+  }
+  return true;
+}
+function renderTable() {
+  const statuses = [["all", "All"], ["todo", "To do"], ["solved", "Solved"], ["due", "Due"], ["mastered", "Mastered"], ["unrated", "Unrated"], ["notes", "Has notes"]];
+  $("#fStatus").innerHTML = statuses.map(([k, l]) => `<button type="button" data-status="${k}" aria-pressed="${S.f.status === k}">${l}</button>`).join("");
+  const filtering = S.f.q || S.f.topic || S.f.level || S.f.status !== "all";
+  let html = "", shown = 0;
+  for (const t of S.topics) {
+    const all = S.P.filter(p => p.topic === t), list = all.filter(matches);
+    if (!list.length) continue;
+    shown += list.length;
+    const done = all.filter(p => isSolved(p.id)).length, closed = !filtering && S.closed.has(t);
+    html += `<tr class="group ${closed ? "closed" : ""}" data-group="${esc(t)}"><td colspan="7"><div class="g"><span class="caret">▾</span>${esc(t)}
+      <div class="meter"><i style="width:${done / all.length * 100}%"></i></div><span class="c num">${done}/${all.length}</span></div></td></tr>`;
+    if (closed) continue;
+    for (const p of list) {
+      const e = E(p.id), st = stateOf(p.id);
+      const icon = { todo: "", solved: "✓", due: "↻", mastered: "★" }[st];
+      const rev = st === "todo" ? "" : st === "mastered" ? `<span class="rev">mastered</span>` : `<span class="rev ${st === "due" ? "overdue" : ""}">${relDay(e.due)}</span>`;
+      html += `<tr class="prob" data-open="${p.id}"><td><span class="st ${st}" title="${st}">${icon}</span></td><td class="pnum num hide-sm">${p.id}</td>
+        <td class="ptitle">${esc(p.title)}${e.notes ? `<span class="note-dot" title="Has notes"></span>` : ""}${e.rated === false ? ` <span class="status warn">rate</span>` : ""}</td>
+        <td>${links(p, true)}</td>
+        <td class="hide-sm"><span class="links">${p.video ? `<a class="chip" href="${esc(p.video)}" target="_blank" rel="noopener">▶ Video</a>` : ""}${p.article ? `<a class="chip" href="${esc(p.article)}" target="_blank" rel="noopener">Article</a>` : ""}</span></td>
+        <td class="hide-sm"><span class="lvl">${p.level}</span></td><td>${rev}</td></tr>`;
+    }
+  }
+  $("#tbody").innerHTML = html || `<tr><td colspan="7" class="empty" style="text-align:center;padding:28px">No problems match these filters.</td></tr>`;
+  $("#countSub").textContent = filtering ? `${shown} of ${S.P.length} shown` : `${S.P.length} problems`;
+}
+
+function renderDrawer() {
+  const p = S.byId.get(S.openId), e = E(p.id), st = stateOf(p.id), t = todayISO();
+  const rateBtns = act => `<div class="rate">${Object.entries(RATINGS).map(([k, r]) => `<button type="button" data-act="${act}" data-r="${k}"><b>${r.label}</b><span>${r.hint}</span></button>`).join("")}</div>`;
+  const hist = [e.solved && `<div>✓ Solved ${fmtDate(e.solved, { month: "short", day: "numeric", year: "numeric" })} · ${e.rating ? RATINGS[e.rating].label : "—"}${e.src === "lc" ? " · via LeetCode sync" : ""}${e.mins ? ` · ${e.mins} min` : ""}</div>`,
+                ...(e.reviews || []).map(r => `<div>↻ Revised ${fmtDate(r.d, { month: "short", day: "numeric", year: "numeric" })} · ${RATINGS[r.r]?.label || r.r}${r.src === "lc" ? " · via LeetCode" : ""}</div>`)].filter(Boolean);
+  const step = Math.min(e.step ?? 0, INTERVALS.length);
+  let action;
+  if (!e.solved) {
+    action = `<div><label>How did it go?</label>${rateBtns("solve")}
+      <div class="inline" style="margin-top:10px"><label for="dMins" style="margin:0">Time spent</label><input class="field num" id="dMins" type="number" min="1" max="600" placeholder="min" style="width:80px">
+      <label for="dDate" style="margin:0 0 0 8px">Date</label><input class="field" id="dDate" type="date" value="${t}" max="${t}"></div></div>`;
+  } else if (e.rated === false) {
+    action = `<div><label>Auto-synced from LeetCode on ${fmtDate(e.solved)}. How did it go?</label>${rateBtns("rate")}</div>`;
+  } else {
+    action = `<div><label>${st === "mastered" ? "Mastered. Log an extra revision anyway?" : st === "due" ? `Revision due ${relDay(e.due)}. Re-solve it without looking, then rate:` : `Next revision ${relDay(e.due)} (${fmtDate(e.due)}). Revising early still counts:`}</label>${rateBtns("review")}</div>`;
+  }
+  $("#drawer").innerHTML = `
+    <header><div style="flex:1;min-width:0"><div class="meta">#${p.id} · ${esc(p.topic)} · <span class="lvl">${p.level}</span>${p.lc ? ` · LC ${p.lc.diff}` : ""}</div><h3>${esc(p.title)}</h3></div>
+      <button class="btn ghost icon-btn" data-act="close" aria-label="Close">✕</button></header>
+    <div class="body">
+      <div>${links(p)}${p.lc?.equivalent ? `<p style="color:var(--muted);font-size:12px;margin:8px 0 0">This problem isn't on LeetCode. LC ${p.lc.num} is the closest equivalent, and solving it there still auto-syncs. TUF has the exact problem.</p>` : ""}${p.lc?.paid ? `<p style="color:var(--muted);font-size:12px;margin:8px 0 0">The LeetCode version needs Premium. Use the free TUF practice link instead.</p>` : ""}</div>
+      ${e.solved ? `<div class="facts"><div><span>Status</span><b>${{ solved: "Solved", due: "Due", mastered: "Mastered ★" }[st]}</b></div>
+        <div><span>Revisions</span><b class="num">${(e.reviews || []).length}</b><div class="steps">${INTERVALS.map((_, i) => `<i class="${i < step ? "on" : ""}"></i>`).join("")}</div></div>
+        <div><span>Next review</span><b>${e.due ? fmtDate(e.due) : "—"}</b></div></div>` : ""}
+      ${action}
+      <div><label for="dNotes">Notes: key insight, complexity, mistakes</label>
+        <textarea id="dNotes" placeholder="Idea: …&#10;Time O(n) · Space O(1)&#10;Mistake: …">${esc(e.notes || "")}</textarea></div>
+      ${hist.length ? `<div><label>History</label><div class="hist">${hist.join("")}</div></div>` : ""}
+      ${p.tags.length ? `<div class="links">${p.tags.map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>` : ""}
+      ${e.solved ? `<div><button class="btn danger" data-act="reset">Mark as unsolved</button></div>` : ""}
+    </div>`;
+}
+function openDrawer(id) {
+  S.openId = +id; renderDrawer();
+  $("#drawer").classList.add("on"); $("#scrim").classList.add("on"); $("#drawer").setAttribute("aria-hidden", "false");
+}
+function closeDrawer() {
+  flushNotes();
+  S.openId = null; $("#drawer").classList.remove("on"); $("#scrim").classList.remove("on"); $("#drawer").setAttribute("aria-hidden", "true");
+}
+function flushNotes() {
+  const ta = $("#dNotes");
+  if (!ta || !S.openId) return;
+  const v = ta.value.trimEnd();
+  if (v !== (E(S.openId).notes || "")) {
+    S.prog.problems[String(S.openId)] = { ...E(S.openId), notes: v, updated: new Date().toISOString() };
+    S.msgs.push(`notes #${S.openId}`); saveSoon(); renderTable();
+  }
+}
+
+// ---- GitHub persistence ----
+const api = (path, opts = {}) => fetch(`https://api.github.com/repos/${S.repo}${path}`, {
+  ...opts, cache: "no-store",
+  headers: { Accept: "application/vnd.github+json", Authorization: `Bearer ${S.token}`, "X-GitHub-Api-Version": "2022-11-28", ...(opts.headers || {}) },
+});
+const b64decode = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\n/g, "")), c => c.charCodeAt(0)));
+const b64encode = s => { const b = new TextEncoder().encode(s); let out = ""; for (let i = 0; i < b.length; i += 0x8000) out += String.fromCharCode(...b.subarray(i, i + 0x8000)); return btoa(out); };
+
+async function fetchRemote() {
+  const r = await api("/contents/data/progress.json");
+  if (!r.ok) throw new Error(r.status === 401 ? "Token rejected (401)" : r.status === 404 ? "Repo or file not found. Check the repo name and token access" : `GitHub error ${r.status}`);
+  const j = await r.json();
+  return { prog: JSON.parse(b64decode(j.content)), sha: j.sha };
+}
+function merge(remote, local) {
+  // Per-problem last-write-wins on `updated`; config by config_updated; sync cursor from the Action.
+  const out = { ...remote, problems: { ...remote.problems } };
+  for (const [k, e] of Object.entries(local.problems || {})) {
+    const r = remote.problems[k];
+    if (!r || (e.updated || "") > (r.updated || "")) out.problems[k] = e;
+  }
+  if ((local.config_updated || "") > (remote.config_updated || "")) { out.config = local.config; out.config_updated = local.config_updated; }
+  out.sync = { ...(local.sync || {}), ...(remote.sync || {}) };
+  return out;
+}
+let saveTimer;
+function saveSoon() {
+  S.dirty = true;
+  LS("sde.local", JSON.stringify(S.prog)); LS("sde.dirty", "1");
+  renderSync();
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(push, 1500);
+}
+async function push() {
+  if (!S.token || !S.dirty || S.saving) return;
+  S.saving = true; S.error = ""; renderSync();
+  const msgs = S.msgs.splice(0);
+  try {
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const body = JSON.stringify(S.prog, null, 1) + "\n";
+      const subject = msgs.length === 1 ? `progress: ${msgs[0]}` : `progress: ${msgs.length || 1} updates`;
+      const r = await api("/contents/data/progress.json", {
+        method: "PUT",
+        body: JSON.stringify({ message: msgs.length > 1 ? `${subject}\n\n${msgs.map(m => "- " + m).join("\n")}` : subject, content: b64encode(body), sha: S.sha }),
+      });
+      if (r.ok) { S.sha = (await r.json()).content.sha; S.dirty = false; LS("sde.dirty", null); break; }
+      if (r.status === 409 || r.status === 422) {   // someone (the Action) committed meanwhile: merge and retry
+        const remote = await fetchRemote(); S.prog = merge(remote.prog, S.prog); S.sha = remote.sha; continue;
+      }
+      throw new Error(r.status === 403 || r.status === 404 ? "Token can't write to this repo (needs Contents: Read and write)" : `Save failed (${r.status})`);
+    }
+    if (S.dirty) throw new Error("Save kept conflicting. Will retry");
+  } catch (err) {
+    S.msgs.unshift(...msgs); S.error = err.message;
+  } finally {
+    S.saving = false; render();
+    if (S.dirty && !S.error) saveSoon();
+  }
+}
+async function triggerLeetCodeSync() {
+  const b = $("#lcSyncBtn"); b.disabled = true;
+  try {
+    const r = await api("/actions/workflows/sync.yml/dispatches", { method: "POST", body: JSON.stringify({ ref: "main" }) });
+    if (r.status === 204) { toast("Sync started. New solves appear in about a minute"); setTimeout(reloadRemote, 75000); }
+    else toast(r.status === 403 || r.status === 404 ? "Token needs Actions: Read and write" : `Couldn't start sync (${r.status})`);
+  } finally { setTimeout(() => b.disabled = false, 5000); }
+}
+async function reloadRemote() {
+  if (!S.token) return;
+  try { const r = await fetchRemote(); S.prog = S.dirty ? merge(r.prog, S.prog) : r.prog; S.sha = r.sha; LS("sde.local", JSON.stringify(S.prog)); render(); }
+  catch (e) { S.error = e.message; renderSync(); }
+}
+function renderSync() {
+  const dot = $("#syncDot"), txt = $("#syncText");
+  let cls = "ok", label;
+  if (S.error) { cls = "err"; label = S.error; }
+  else if (S.saving) { cls = "busy"; label = "Saving…"; }
+  else if (!S.token) { cls = ""; label = S.dirty ? "Saved in this browser only" : "View only"; }
+  else if (S.dirty) { cls = "busy"; label = "Unsaved changes"; }
+  else label = `Synced to ${S.repo.split("/")[1] || "GitHub"}`;
+  dot.className = "dot " + cls; txt.textContent = label; $("#syncPill").title = label;
+  $("#lcSyncBtn").hidden = !S.token || !S.prog?.config?.leetcode_username;
+  const ban = $("#banner");
+  if (!S.token) {
+    ban.hidden = false;
+    ban.innerHTML = `<span>👋 <b>${S.dirty ? "Your changes are only saved in this browser." : "This is a read-only view."}</b> Connect a GitHub token to save progress to the repo, sync across devices, and turn on LeetCode auto-sync.</span><button class="btn primary" data-act="settings">Connect GitHub</button>`;
+  } else if (!S.prog?.config?.leetcode_username) {
+    ban.hidden = false;
+    ban.innerHTML = `<span>Add your <b>LeetCode username</b> to auto-mark problems you solve on LeetCode. Only solves on or after ${fmtDate(S.prog.config.start_date)} count.</span><button class="btn" data-act="settings">Add username</button>`;
+  } else ban.hidden = true;
+}
+
+// ---- settings ----
+function openSettings() {
+  const c = S.prog.config;
+  $("#sToken").value = S.token; $("#sRepo").value = S.repo; $("#sLc").value = c.leetcode_username || "";
+  $("#sStart").value = c.start_date; $("#sTarget").value = c.target_date;
+  $("#settings").showModal();
+}
+$("#settings").addEventListener("close", async () => {
+  if ($("#settings").returnValue !== "save") return;
+  const token = $("#sToken").value.trim(), repo = $("#sRepo").value.trim().replace(/^https:\/\/github.com\//, "").replace(/\/$/, "");
+  const connecting = token && (token !== S.token || repo !== S.repo);
+  S.token = token; S.repo = repo; LS("sde.token", token || null); LS("sde.repo", repo || null);
+  const c = S.prog.config, next = { ...c, leetcode_username: $("#sLc").value.trim(), start_date: $("#sStart").value || c.start_date, target_date: $("#sTarget").value || c.target_date };
+  const cfgChanged = JSON.stringify(next) !== JSON.stringify(c);
+  if (connecting) {
+    S.error = ""; renderSync();
+    try { const r = await fetchRemote(); S.prog = merge(r.prog, S.prog); S.sha = r.sha; if (Object.keys(S.prog.problems).length !== Object.keys(r.prog.problems).length || S.dirty) S.dirty = true; toast("Connected to GitHub"); }
+    catch (e) { S.error = e.message; render(); return; }
+  }
+  if (cfgChanged) { S.prog.config = next; S.prog.config_updated = new Date().toISOString(); S.msgs.push("update settings"); saveSoon(); }
+  else if (S.dirty) saveSoon();
+  render();
+});
+
+// ---- events ----
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-act],[data-open],[data-topic],[data-group],[data-status],[data-filter-status]");
+  if (!t || (e.target.closest("a") && !t.dataset.filterStatus)) return;
+  if (t.dataset.filterStatus) { S.f.status = t.dataset.filterStatus; S.f.topic = ""; persistFilter(); renderTable(); return; }
+  if (t.dataset.status) { S.f.status = t.dataset.status; persistFilter(); renderTable(); return; }
+  if (t.dataset.topic) { S.f.topic = t.dataset.topic; $("#fTopic").value = S.f.topic; persistFilter(); renderTable(); $("#problemsCard").scrollIntoView({ behavior: "smooth" }); return; }
+  if (t.dataset.group) { const g = t.dataset.group; S.closed.has(g) ? S.closed.delete(g) : S.closed.add(g); LS("sde.closed", JSON.stringify([...S.closed])); renderTable(); return; }
+  if (t.dataset.open && !t.dataset.act) { openDrawer(t.dataset.open); return; }
+  const act = t.dataset.act, id = S.openId;
+  if (act === "close") closeDrawer();
+  else if (act === "settings") openSettings();
+  else if (act === "solve") { flushNotes(); const mins = +$("#dMins").value || null, on = $("#dDate").value || todayISO(); solve(id, t.dataset.r, { mins, on: on > todayISO() ? todayISO() : on }); }
+  else if (act === "rate") { flushNotes(); solve(id, t.dataset.r, { on: E(id).solved, src: "lc" }); }
+  else if (act === "review") { flushNotes(); review(id, t.dataset.r); }
+  else if (act === "reset") { unsolve(id); toast("Marked unsolved"); }
+});
+$("#scrim").addEventListener("click", closeDrawer);
+document.addEventListener("keydown", e => { if (e.key === "Escape" && S.openId) closeDrawer(); if (e.key === "/" && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); $("#q").focus(); } });
+document.addEventListener("focusout", e => { if (e.target.id === "dNotes") flushNotes(); });
+$("#settingsBtn").addEventListener("click", openSettings);
+$("#lcSyncBtn").addEventListener("click", triggerLeetCodeSync);
+$("#themeBtn").addEventListener("click", () => {
+  const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.dataset.theme = dark ? "light" : "dark"; LS("sde.theme", document.documentElement.dataset.theme);
+});
+function persistFilter() { LS("sde.filter", JSON.stringify(S.f)); }
+let qTimer;
+$("#q").addEventListener("input", e => { clearTimeout(qTimer); qTimer = setTimeout(() => { S.f.q = e.target.value.trim(); persistFilter(); renderTable(); }, 120); });
+$("#fTopic").addEventListener("change", e => { S.f.topic = e.target.value; persistFilter(); renderTable(); });
+$("#fLevel").addEventListener("change", e => { S.f.level = e.target.value; persistFilter(); renderTable(); });
+window.addEventListener("beforeunload", e => { flushNotes(); if (S.token && S.dirty) { push(); e.preventDefault(); } });
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && !S.dirty) reloadRemote(); else if (S.dirty) push(); });
+let rz; window.addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => { if (!S.prog) return; const s = computeStats(); renderBurnup(s); renderHeatmap(s); }, 150); });
+
+// tooltips (heatmap cells + burn-up crosshair)
+const tip = $("#tip");
+function showTip(html, ev) { tip.innerHTML = html; tip.style.opacity = 1; const x = Math.min(ev.clientX + 14, innerWidth - tip.offsetWidth - 8); tip.style.left = x + "px"; tip.style.top = (ev.clientY - tip.offsetHeight - 10) + "px"; }
+document.addEventListener("mousemove", ev => {
+  const cell = ev.target.closest("[data-tip]");
+  if (cell) return showTip(cell.dataset.tip, ev);
+  if (ev.target.id === "burnHit" && S.burn) {
+    const svg = $("#burnSvg"), pt = svg.getBoundingClientRect(), { pts, x, y, s } = S.burn;
+    const mx = ev.clientX - pt.left;
+    let best = pts[0]; for (const p of pts) if (Math.abs(x(p[0]) - mx) < Math.abs(x(best[0]) - mx)) best = p;
+    const plan = Math.min(s.total, Math.round(s.total * (diffDays(s.start, best[0]) + 1) / (diffDays(s.start, s.target) + 1)));
+    $("#burnX").setAttribute("x1", x(best[0])); $("#burnX").setAttribute("x2", x(best[0])); $("#burnX").setAttribute("opacity", .4);
+    $("#burnDot").setAttribute("cx", x(best[0])); $("#burnDot").setAttribute("cy", y(best[1])); $("#burnDot").setAttribute("opacity", 1);
+    return showTip(`<b>${fmtDate(best[0], { weekday: "short", month: "short", day: "numeric" })}</b><br>Solved: ${best[1]}<br>Plan: ${plan}`, ev);
+  }
+  tip.style.opacity = 0;
+  if (S.burn && $("#burnX")) { $("#burnX").setAttribute("opacity", 0); $("#burnDot").setAttribute("opacity", 0); }
+});
+
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove("on"), 2600); }
+
+// ---- boot ----
+async function boot() {
+  const theme = LS("sde.theme"); if (theme) document.documentElement.dataset.theme = theme;
+  try { Object.assign(S.f, JSON.parse(LS("sde.filter") || "{}")); } catch (e) {}
+  try { S.closed = new Set(JSON.parse(LS("sde.closed") || "[]")); } catch (e) {}
+  const [pr, pg] = await Promise.all([fetch("data/problems.json").then(r => r.json()), fetch("data/progress.json?t=" + Date.now(), { cache: "no-store" }).then(r => r.json())]);
+  S.P = pr.problems; S.topics = pr.topics; S.total = S.P.length; S.P.forEach(p => S.byId.set(p.id, p));
+  // Repo: saved setting > the GitHub Pages URL (<owner>.github.io/<repo>) > config
+  const pagesRepo = location.hostname.endsWith(".github.io") ? `${location.hostname.split(".")[0]}/${location.pathname.split("/")[1]}` : "";
+  S.token = LS("sde.token") || ""; S.repo = LS("sde.repo") || pagesRepo || pg.config.github_repo || "";
+  S.prog = pg;
+  let local = null; try { local = JSON.parse(LS("sde.local") || "null"); } catch (e) {}
+  if (local && LS("sde.dirty")) { S.prog = merge(pg, local); S.dirty = true; S.msgs.push("changes made offline"); }
+  $("#fTopic").innerHTML = `<option value="">All topics</option>` + S.topics.map(t => `<option ${S.f.topic === t ? "selected" : ""}>${esc(t)}</option>`).join("");
+  $("#fLevel").value = S.f.level; $("#q").value = S.f.q;
+  render();
+  if (S.token) { await reloadRemote(); if (S.dirty) push(); }
+  setInterval(() => { if (!S.dirty && document.visibilityState === "visible") reloadRemote(); }, 5 * 60 * 1000);
+}
+boot().catch(err => { $("#syncText").textContent = "Failed to load data: " + err.message; $("#syncDot").className = "dot err"; console.error(err); });
+</script>
+</body>
+</html>
