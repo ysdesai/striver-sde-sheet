@@ -19,6 +19,18 @@
    "notes": "",
    "mins": 35,
    "updated": "2026-10-28T19:13:57.389Z"
+  },
+  "2": {
+   "solved": "2026-10-28",
+   "src": "manual",
+   "rating": "ok",
+   "rated": true,
+   "step": 0,
+   "due": "2026-10-29",
+   "reviews": [],
+   "notes": "",
+   "mins": null,
+   "updated": "2026-10-28T19:38:00.818Z"
   }
  },
  "sync": {
