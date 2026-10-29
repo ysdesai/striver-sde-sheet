@@ -1,8 +1,8 @@
 <svg xmlns='http://www.w3.org/2000/svg' width='840' height='490' viewBox='0 0 840 490' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif'>
 <circle cx='70' cy='74' r='46' fill='none' stroke='#2b3138' stroke-width='10'/>
-<circle cx='70' cy='74' r='46' fill='none' stroke='#3987e5' stroke-width='10' stroke-linecap='round' stroke-dasharray='3.7 289.0' transform='rotate(-90 70 74)'/>
-<text x='70' y='76' text-anchor='middle' font-size='22' font-weight='700' fill='#e6edf3'>1%</text>
-<text x='70' y='94' text-anchor='middle' font-size='11' fill='#9198a1'>2/156</text>
+<circle cx='70' cy='74' r='46' fill='none' stroke='#3987e5' stroke-width='10' stroke-linecap='round' stroke-dasharray='5.6 289.0' transform='rotate(-90 70 74)'/>
+<text x='70' y='76' text-anchor='middle' font-size='22' font-weight='700' fill='#e6edf3'>2%</text>
+<text x='70' y='94' text-anchor='middle' font-size='11' fill='#9198a1'>3/156</text>
 <text x='160' y='52' font-size='12' fill='#9198a1'>Current streak</text>
 <text x='160' y='82' font-size='26' font-weight='700' fill='#e6edf3'>1d</text>
 <text x='160' y='102' font-size='11' fill='#9198a1'>best 1d</text>
@@ -10,16 +10,16 @@
 <text x='330' y='82' font-size='26' font-weight='700' fill='#e6edf3'>0</text>
 <text x='330' y='102' font-size='11' fill='#9198a1'>0 mastered</text>
 <text x='500' y='52' font-size='12' fill='#9198a1'>Needed pace</text>
-<text x='500' y='82' font-size='26' font-weight='700' fill='#e6edf3'>2.9/day</text>
+<text x='500' y='82' font-size='26' font-weight='700' fill='#e6edf3'>2.8/day</text>
 <text x='500' y='102' font-size='11' fill='#9198a1'>54 days to target</text>
 <text x='670' y='52' font-size='12' fill='#9198a1'>Plan status</text>
-<text x='670' y='82' font-size='26' font-weight='700' fill='#d29922'>Behind</text>
-<text x='670' y='102' font-size='11' fill='#9198a1'>2 done vs 3 planned</text>
+<text x='670' y='82' font-size='26' font-weight='700' fill='#3fb950'>On track</text>
+<text x='670' y='102' font-size='11' fill='#9198a1'>3 done vs 3 planned</text>
 <text x='16' y='152' font-size='13' font-weight='600' fill='#e6edf3'>Progress by topic</text>
 <text x='16' y='178' font-size='11.5' fill='#e6edf3'>Arrays</text>
 <rect x='206' y='169' width='160' height='10' rx='4' fill='#2b3138'/>
-<rect x='206' y='169' width='64.0' height='10' rx='4' fill='#3987e5'/>
-<text x='412' y='178' text-anchor='end' font-size='11' fill='#9198a1'>2/5</text>
+<rect x='206' y='169' width='96.0' height='10' rx='4' fill='#3987e5'/>
+<text x='412' y='178' text-anchor='end' font-size='11' fill='#9198a1'>3/5</text>
 <text x='16' y='200' font-size='11.5' fill='#e6edf3'>Arrays Part-II</text>
 <rect x='206' y='191' width='160' height='10' rx='4' fill='#2b3138'/>
 <text x='412' y='200' text-anchor='end' font-size='11' fill='#9198a1'>0/5</text>
