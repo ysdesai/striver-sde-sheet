@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-3/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-1%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-3-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-3/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-2%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-2-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -16,7 +16,7 @@
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
-| 1 | Set Matrix Zeroes | [LC 73](https://leetcode.com/problems/set-matrix-zeroes/) M · [TUF](https://takeuforward.org/practice/dsa/set-matrix-zeroes?source=strivers-sde-sheet) | [▶ video](https://youtu.be/N0MgLvceX7M) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/set-matrix-zeroes) | 🟨 | 🔁 | **2026-10-29** |  |
+| 1 | Set Matrix Zeroes | [LC 73](https://leetcode.com/problems/set-matrix-zeroes/) M · [TUF](https://takeuforward.org/practice/dsa/set-matrix-zeroes?source=strivers-sde-sheet) | [▶ video](https://youtu.be/N0MgLvceX7M) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/set-matrix-zeroes) | 🟨 | ✅ | 2026-11-05 |  |
 | 2 | Pascal's Triangle I | [LC 118](https://leetcode.com/problems/pascals-triangle/) E · [TUF](https://takeuforward.org/practice/dsa/pascals-triangle-i?source=strivers-sde-sheet) | [▶ video](https://youtu.be/bR7mQgwQ_o8) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/pascals-triangle-first-n-rows) | 🟨 | 🔁 | **2026-10-29** |  |
 | 3 | Next Permutation | [LC 31](https://leetcode.com/problems/next-permutation/) M · [TUF](https://takeuforward.org/practice/dsa/next-permutation?source=strivers-sde-sheet) | [▶ video](https://youtu.be/JDOXKqF60RQ) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/next-permutation) | 🟨 | 🔁 | **2026-10-29** |  |
 | 4 | Kadane's Algorithm | [LC 53](https://leetcode.com/problems/maximum-subarray/) M · [TUF](https://takeuforward.org/practice/dsa/kadane%27s-algorithm?source=strivers-sde-sheet) | [▶ video](https://youtu.be/AHZpyENo7k4) | 🟨 |  |  |  |
