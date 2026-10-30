@@ -13,12 +13,18 @@
    "src": "manual",
    "rating": "ok",
    "rated": true,
-   "step": 0,
-   "due": "2026-10-29",
-   "reviews": [],
+   "step": 2,
+   "due": "2026-11-05",
+   "reviews": [
+    {
+     "d": "2026-10-29",
+     "r": "easy",
+     "src": "manual"
+    }
+   ],
    "notes": "",
    "mins": 35,
-   "updated": "2026-10-28T19:13:57.389Z"
+   "updated": "2026-10-30T00:56:50.726Z"
   },
   "2": {
    "solved": "2026-10-28",
