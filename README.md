@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-5/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-1%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-2-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-6/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-1%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-2-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -24,11 +24,11 @@
 
 </details>
 
-<details><summary><b>Arrays Part-II</b> - 0/5</summary>
+<details open><summary><b>Arrays Part-II</b> - 1/5</summary>
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
-| 6 | Rotate matrix by 90 degrees | [LC 48](https://leetcode.com/problems/rotate-image/) M · [TUF](https://takeuforward.org/practice/dsa/rotate-matrix-by-90-degrees?source=strivers-sde-sheet) | [▶ video](https://youtu.be/Z0R2u6gd3GU) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/rotate-matrix-90-degrees-clockwise) | 🟨 |  |  |  |
+| 6 | Rotate matrix by 90 degrees | [LC 48](https://leetcode.com/problems/rotate-image/) M · [TUF](https://takeuforward.org/practice/dsa/rotate-matrix-by-90-degrees?source=strivers-sde-sheet) | [▶ video](https://youtu.be/Z0R2u6gd3GU) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/rotate-matrix-90-degrees-clockwise) | 🟨 | ✅ | 2026-11-02 |  |
 | 7 | Merge Overlapping Subintervals | [LC 56](https://leetcode.com/problems/merge-intervals/) M · [TUF](https://takeuforward.org/practice/dsa/merge-overlapping-subintervals?source=strivers-sde-sheet) | [▶ video](https://youtu.be/IexN60k62jo) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/merge-overlapping-intervals) | 🟨 |  |  |  |
 | 8 | Merge two sorted arrays without extra space | [LC 88](https://leetcode.com/problems/merge-sorted-array/) E · [TUF](https://takeuforward.org/practice/dsa/merge-two-sorted-arrays-without-extra-space?source=strivers-sde-sheet) | [▶ video](https://youtu.be/n7uwj04E0I4) | 🟨 |  |  |  |
 | 9 | Find the Duplicate Number | [LC 287](https://leetcode.com/problems/find-the-duplicate-number/) M · [TUF](https://takeuforward.org/practice/dsa/find-the-duplicate-number?source=strivers-sde-sheet) | [▶ video](https://www.youtube.com/watch?v=32Ll35mhWg0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=1) | 🟨 |  |  |  |
