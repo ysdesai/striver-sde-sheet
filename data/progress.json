@@ -114,12 +114,13 @@
    "solved": "2026-11-05",
    "src": "lc",
    "rating": "ok",
-   "rated": false,
+   "rated": true,
    "step": 0,
    "due": "2026-11-06",
-   "updated": "2026-11-05T22:05:01+00:00",
+   "updated": "2026-11-05T22:42:31.658Z",
    "reviews": [],
-   "notes": ""
+   "notes": "",
+   "mins": null
   }
  },
  "sync": {
