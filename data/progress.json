@@ -121,6 +121,18 @@
    "reviews": [],
    "notes": "",
    "mins": null
+  },
+  "10": {
+   "solved": "2026-11-05",
+   "src": "manual",
+   "rating": "easy",
+   "rated": true,
+   "step": 1,
+   "due": "2026-11-08",
+   "reviews": [],
+   "notes": "",
+   "mins": null,
+   "updated": "2026-11-05T23:11:06.033Z"
   }
  },
  "sync": {
