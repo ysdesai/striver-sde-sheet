@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-11/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-1%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-6-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-12/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-1%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-6-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -36,12 +36,12 @@
 
 </details>
 
-<details open><summary><b>Arrays Part-III</b> - 1/5</summary>
+<details open><summary><b>Arrays Part-III</b> - 2/5</summary>
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
 | 11 | Search in a 2D Matrix | [LC 74](https://leetcode.com/problems/search-a-2d-matrix/) M · [TUF](https://takeuforward.org/practice/dsa/search-in-a-2d-matrix?source=strivers-sde-sheet) | [▶ video](https://youtu.be/ZYpYur0znng) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/search-in-sorted-2d-matrix) | 🟨 | ✅ | 2026-11-06 |  |
-| 12 | Majority Element-I | [LC 169](https://leetcode.com/problems/majority-element/) E · [TUF](https://takeuforward.org/practice/dsa/majority-element-i?source=strivers-sde-sheet) | [▶ video](https://youtu.be/nP_ns3uSh80) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/majority-element-n-by-2) | 🟨 |  |  |  |
+| 12 | Majority Element-I | [LC 169](https://leetcode.com/problems/majority-element/) E · [TUF](https://takeuforward.org/practice/dsa/majority-element-i?source=strivers-sde-sheet) | [▶ video](https://youtu.be/nP_ns3uSh80) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/majority-element-n-by-2) | 🟨 | ✅ | 2026-11-08 |  |
 | 13 | Majority Element-II | [LC 229](https://leetcode.com/problems/majority-element-ii/) M · [TUF](https://takeuforward.org/practice/dsa/majority-element-ii?source=strivers-sde-sheet) | [▶ video](https://youtu.be/vwZj1K0e9U8) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/majority-element-ii-n-by-3) | 🟨 |  |  |  |
 | 14 | Grid unique paths | [LC 62](https://leetcode.com/problems/unique-paths/) M · [TUF](https://takeuforward.org/practice/dsa/grid-unique-paths?source=strivers-sde-sheet) | [▶ video](https://www.youtube.com/watch?v=sdE0A2Oxofw) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/grid-unique-paths) | 🟨 |  |  |  |
 | 15 | Reverse Pairs | [LC 493](https://leetcode.com/problems/reverse-pairs/) H · [TUF](https://takeuforward.org/practice/dsa/reverse-pairs?source=strivers-sde-sheet) | [▶ video](https://youtu.be/0e4bZaP3MDI) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/count-reverse-pairs) | 🟥 |  |  |  |
