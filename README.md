@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-13/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-1%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-6-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-14/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-1%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-6-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -60,11 +60,11 @@
 
 </details>
 
-<details><summary><b>Linked List</b> - 0/5</summary>
+<details open><summary><b>Linked List</b> - 1/5</summary>
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
-| 21 | Reverse a LL | [LC 206](https://leetcode.com/problems/reverse-linked-list/) E · [TUF](https://takeuforward.org/practice/dsa/reverse-a-ll?source=strivers-sde-sheet) | [▶ video](https://youtu.be/D2vI2DNJGd8?si=RCaLSx01qR21IBdh) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-a-singly-linked-list) | 🟨 |  |  |  |
+| 21 | Reverse a LL | [LC 206](https://leetcode.com/problems/reverse-linked-list/) E · [TUF](https://takeuforward.org/practice/dsa/reverse-a-ll?source=strivers-sde-sheet) | [▶ video](https://youtu.be/D2vI2DNJGd8?si=RCaLSx01qR21IBdh) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-a-singly-linked-list) | 🟨 | ✅ | 2026-11-08 |  |
 | 22 | Find Middle of Linked List | [LC 876](https://leetcode.com/problems/middle-of-the-linked-list/) E · [TUF](https://takeuforward.org/practice/dsa/find-middle-of-linked-list?source=strivers-sde-sheet) | [▶ video](https://youtu.be/7LjQ57RqgEc?si=ir_rRDio38rhamU_) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/find-middle-of-linked-list) | 🟦 |  |  |  |
 | 23 | Merge two Sorted Lists  | [LC 21](https://leetcode.com/problems/merge-two-sorted-lists/) E · [TUF](https://takeuforward.org/practice/dsa/merge-sorted-lists-?source=strivers-sde-sheet) | [▶ video](https://www.youtube.com/watch?v=Xb4slcp1U38&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=29) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/merge-two-sorted-linked-lists) | 🟦 |  |  |  |
 | 24 | Remove Nth node from the back of the LL | [LC 19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) M · [TUF](https://takeuforward.org/practice/dsa/remove-nth-node-from-the-back-of-the-ll?source=strivers-sde-sheet) | [▶ video](https://youtu.be/3kMKYQ2wNIU?si=DtFDnPU7z9HMz_GM) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/remove-the-nth-node-from-the-end-of-a-linked-list) | 🟨 |  |  |  |
