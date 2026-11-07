@@ -229,6 +229,18 @@
    "notes": "",
    "mins": null,
    "updated": "2026-11-07T21:35:31.974Z"
+  },
+  "25": {
+   "solved": "2026-11-07",
+   "src": "manual",
+   "rating": "easy",
+   "rated": true,
+   "step": 1,
+   "due": "2026-11-10",
+   "reviews": [],
+   "notes": "",
+   "mins": null,
+   "updated": "2026-11-07T21:44:38.470Z"
   }
  },
  "sync": {
