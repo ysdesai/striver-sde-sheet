@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-16/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-2%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-9-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-17/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-3%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-9-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -48,11 +48,11 @@
 
 </details>
 
-<details><summary><b>Arrays Part-IV</b> - 0/5</summary>
+<details open><summary><b>Arrays Part-IV</b> - 1/5</summary>
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
-| 16 | Two Sum | [LC 1](https://leetcode.com/problems/two-sum/) E · [TUF](https://takeuforward.org/practice/dsa/two-sum?source=strivers-sde-sheet) | [▶ video](https://youtu.be/UXDSeD9mN-k) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/two-sum) | 🟦 |  |  |  |
+| 16 | Two Sum | [LC 1](https://leetcode.com/problems/two-sum/) E · [TUF](https://takeuforward.org/practice/dsa/two-sum?source=strivers-sde-sheet) | [▶ video](https://youtu.be/UXDSeD9mN-k) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/two-sum) | 🟦 | ✅ | 2026-11-10 |  |
 | 17 | 4 Sum | [LC 18](https://leetcode.com/problems/4sum/) M · [TUF](https://takeuforward.org/practice/dsa/4-sum?source=strivers-sde-sheet) | [▶ video](https://youtu.be/eD95WRfh81c) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/4sum) | 🟥 |  |  |  |
 | 18 | Longest Consecutive Sequence in an Array | [LC 128](https://leetcode.com/problems/longest-consecutive-sequence/) M · [TUF](https://takeuforward.org/practice/dsa/longest-consecutive-sequence-in-an-array?source=strivers-sde-sheet) | [▶ video](https://youtu.be/oO5uLE7EUlM) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/longest-consecutive-sequence-in-an-array) | 🟨 |  |  |  |
 | 19 | Count subarrays with given xor K | [TUF](https://takeuforward.org/practice/dsa/count-subarrays-with-given-xor-k?source=strivers-sde-sheet) | [▶ video](https://youtu.be/eZr-6p0B7ME) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/count-subarrays-with-a-given-xor-k) | 🟥 |  |  |  |
