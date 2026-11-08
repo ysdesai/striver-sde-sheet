@@ -265,11 +265,22 @@
    "notes": "",
    "mins": null,
    "updated": "2026-11-08T00:04:59.635Z"
+  },
+  "29": {
+   "solved": "2026-11-07",
+   "src": "lc",
+   "rating": "ok",
+   "rated": false,
+   "step": 0,
+   "due": "2026-11-08",
+   "updated": "2026-11-08T15:20:22+00:00",
+   "reviews": [],
+   "notes": ""
   }
  },
  "sync": {
-  "last_ts": 1794096258,
-  "last_change": "2026-11-08T00:05:10+00:00"
+  "last_ts": 1794119679,
+  "last_change": "2026-11-08T15:20:22+00:00"
  },
  "config_updated": "2026-10-28T19:15:37.244Z"
 }
