@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-22/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-0%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-18-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-23/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-1%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-18-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -98,11 +98,11 @@
 
 </details>
 
-<details><summary><b>Greedy Algorithm</b> - 0/6</summary>
+<details open><summary><b>Greedy Algorithm</b> - 1/6</summary>
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
-| 38 | N meetings in one room | [TUF](https://takeuforward.org/practice/dsa/n-meetings-in-one-room?source=strivers-sde-sheet) | [▶ video](https://youtu.be/mKfhTotEguk?si=2RELeq18mpmIIN3Q) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/n-meetings-in-one-room) | 🟨 |  |  |  |
+| 38 | N meetings in one room | [TUF](https://takeuforward.org/practice/dsa/n-meetings-in-one-room?source=strivers-sde-sheet) | [▶ video](https://youtu.be/mKfhTotEguk?si=2RELeq18mpmIIN3Q) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/n-meetings-in-one-room) | 🟨 | ✅ | 2026-11-12 |  |
 | 39 | Minimum number of platforms required for a railway | [LC 2406](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/) M · [TUF](https://takeuforward.org/practice/dsa/minimum-number-of-platforms-required-for-a-railway?source=strivers-sde-sheet) | [▶ video](https://youtu.be/AsGzwR_FWok?si=165acXU_dtqOHuo9) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-platforms-required-for-a-railway-station) | 🟨 |  |  |  |
 | 40 | Job sequencing Problem | [TUF](https://takeuforward.org/practice/dsa/job-sequencing-problem?source=strivers-sde-sheet) | [▶ video](https://youtu.be/QbwltemZbRg?si=wvcemJ5BLPlTRmkG) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/job-sequencing-problem) | 🟨 |  |  |  |
 | 41 | Fractional Knapsack | [TUF](https://takeuforward.org/practice/dsa/fractional-knapsack?source=strivers-sde-sheet) | [▶ video](https://youtu.be/1ibsQrnuEEg?si=8R2By3wpHo0zZVHE) | 🟨 |  |  |  |
