@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-23/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-1%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-22-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-24/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-2%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-22-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -161,11 +161,11 @@
 
 </details>
 
-<details><summary><b>Stack and Queue</b> - 0/6</summary>
+<details open><summary><b>Stack and Queue</b> - 1/6</summary>
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
-| 66 | Implement Stack using Arrays | [TUF](https://takeuforward.org/practice/dsa/implement-stack-using-arrays?source=strivers-sde-sheet) | [▶ video](https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/implement-a-stack-using-an-array) | 🟨 |  |  |  |
+| 66 | Implement Stack using Arrays | [TUF](https://takeuforward.org/practice/dsa/implement-stack-using-arrays?source=strivers-sde-sheet) | [▶ video](https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/implement-a-stack-using-an-array) | 🟨 | ✅ | 2026-11-13 |  |
 | 67 | Implement Queue using Arrays | [≈ LC 622](https://leetcode.com/problems/design-circular-queue/) M · [TUF](https://takeuforward.org/practice/dsa/implement-queue-using-arrays?source=strivers-sde-sheet) | [▶ video](https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/implement-a-queue-using-an-array) | 🟨 |  |  |  |
 | 68 | Implement Queue using Stack | [LC 232](https://leetcode.com/problems/implement-queue-using-stacks/) E · [TUF](https://takeuforward.org/practice/dsa/implement-queue-using-stack?source=strivers-sde-sheet) | [▶ video](https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/implement-a-queue-using-stacks) | 🟨 |  |  |  |
 | 69 | Balanced Paranthesis | [LC 20](https://leetcode.com/problems/valid-parentheses/) E · [TUF](https://takeuforward.org/practice/dsa/balanced-paranthesis?source=strivers-sde-sheet) | [▶ video](https://youtu.be/xwjS0iZhw4I?si=UoyKpFn4Q3nf5h2R) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/check-balanced-parentheses-using-a-stack) | 🟨 |  |  |  |
