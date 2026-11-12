@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-25/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-3%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-22-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-26/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-4%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-24-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -43,18 +43,18 @@
 | 11 | Search in a 2D Matrix | [LC 74](https://leetcode.com/problems/search-a-2d-matrix/) M · [TUF](https://takeuforward.org/practice/dsa/search-in-a-2d-matrix?source=strivers-sde-sheet) | [▶ video](https://youtu.be/ZYpYur0znng) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/search-in-sorted-2d-matrix) | 🟨 | 🔁 | **2026-11-06** |  |
 | 12 | Majority Element-I | [LC 169](https://leetcode.com/problems/majority-element/) E · [TUF](https://takeuforward.org/practice/dsa/majority-element-i?source=strivers-sde-sheet) | [▶ video](https://youtu.be/nP_ns3uSh80) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/majority-element-n-by-2) | 🟨 | 🔁 | **2026-11-08** |  |
 | 13 | Majority Element-II | [LC 229](https://leetcode.com/problems/majority-element-ii/) M · [TUF](https://takeuforward.org/practice/dsa/majority-element-ii?source=strivers-sde-sheet) | [▶ video](https://youtu.be/vwZj1K0e9U8) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/majority-element-ii-n-by-3) | 🟨 | 🔁 | **2026-11-06** |  |
-| 14 | Grid unique paths | [LC 62](https://leetcode.com/problems/unique-paths/) M · [TUF](https://takeuforward.org/practice/dsa/grid-unique-paths?source=strivers-sde-sheet) | [▶ video](https://www.youtube.com/watch?v=sdE0A2Oxofw) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/grid-unique-paths) | 🟨 | ✅ | 2026-11-12 |  |
+| 14 | Grid unique paths | [LC 62](https://leetcode.com/problems/unique-paths/) M · [TUF](https://takeuforward.org/practice/dsa/grid-unique-paths?source=strivers-sde-sheet) | [▶ video](https://www.youtube.com/watch?v=sdE0A2Oxofw) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/grid-unique-paths) | 🟨 | 🔁 | **2026-11-12** |  |
 | 15 | Reverse Pairs | [LC 493](https://leetcode.com/problems/reverse-pairs/) H · [TUF](https://takeuforward.org/practice/dsa/reverse-pairs?source=strivers-sde-sheet) | [▶ video](https://youtu.be/0e4bZaP3MDI) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/count-reverse-pairs) | 🟥 |  |  |  |
 
 </details>
 
-<details open><summary><b>Arrays Part-IV</b> - 1/5</summary>
+<details open><summary><b>Arrays Part-IV</b> - 2/5</summary>
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
 | 16 | Two Sum | [LC 1](https://leetcode.com/problems/two-sum/) E · [TUF](https://takeuforward.org/practice/dsa/two-sum?source=strivers-sde-sheet) | [▶ video](https://youtu.be/UXDSeD9mN-k) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/two-sum) | 🟦 | 🔁 | **2026-11-10** |  |
 | 17 | 4 Sum | [LC 18](https://leetcode.com/problems/4sum/) M · [TUF](https://takeuforward.org/practice/dsa/4-sum?source=strivers-sde-sheet) | [▶ video](https://youtu.be/eD95WRfh81c) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/4sum) | 🟥 |  |  |  |
-| 18 | Longest Consecutive Sequence in an Array | [LC 128](https://leetcode.com/problems/longest-consecutive-sequence/) M · [TUF](https://takeuforward.org/practice/dsa/longest-consecutive-sequence-in-an-array?source=strivers-sde-sheet) | [▶ video](https://youtu.be/oO5uLE7EUlM) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/longest-consecutive-sequence-in-an-array) | 🟨 |  |  |  |
+| 18 | Longest Consecutive Sequence in an Array | [LC 128](https://leetcode.com/problems/longest-consecutive-sequence/) M · [TUF](https://takeuforward.org/practice/dsa/longest-consecutive-sequence-in-an-array?source=strivers-sde-sheet) | [▶ video](https://youtu.be/oO5uLE7EUlM) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/longest-consecutive-sequence-in-an-array) | 🟨 | ✅ | 2026-11-13 |  |
 | 19 | Count subarrays with given xor K | [TUF](https://takeuforward.org/practice/dsa/count-subarrays-with-given-xor-k?source=strivers-sde-sheet) | [▶ video](https://youtu.be/eZr-6p0B7ME) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/count-subarrays-with-a-given-xor-k) | 🟥 |  |  |  |
 | 20 | Longest Substring Without Repeating Characters | [LC 3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) M · [TUF](https://takeuforward.org/practice/dsa/longest-substring-without-repeating-characters?source=strivers-sde-sheet) | [▶ video](https://youtu.be/-zSxTJkcdAo?si=I2zfR-vlDMg0zU9z) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/longest-substring-without-repeating-characters) | 🟨 |  |  |  |
 
@@ -102,7 +102,7 @@
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
-| 38 | N meetings in one room | [TUF](https://takeuforward.org/practice/dsa/n-meetings-in-one-room?source=strivers-sde-sheet) | [▶ video](https://youtu.be/mKfhTotEguk?si=2RELeq18mpmIIN3Q) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/n-meetings-in-one-room) | 🟨 | ✅ | 2026-11-12 |  |
+| 38 | N meetings in one room | [TUF](https://takeuforward.org/practice/dsa/n-meetings-in-one-room?source=strivers-sde-sheet) | [▶ video](https://youtu.be/mKfhTotEguk?si=2RELeq18mpmIIN3Q) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/n-meetings-in-one-room) | 🟨 | 🔁 | **2026-11-12** |  |
 | 39 | Minimum number of platforms required for a railway | [LC 2406](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/) M · [TUF](https://takeuforward.org/practice/dsa/minimum-number-of-platforms-required-for-a-railway?source=strivers-sde-sheet) | [▶ video](https://youtu.be/AsGzwR_FWok?si=165acXU_dtqOHuo9) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-platforms-required-for-a-railway-station) | 🟨 |  |  |  |
 | 40 | Job sequencing Problem | [TUF](https://takeuforward.org/practice/dsa/job-sequencing-problem?source=strivers-sde-sheet) | [▶ video](https://youtu.be/QbwltemZbRg?si=wvcemJ5BLPlTRmkG) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/job-sequencing-problem) | 🟨 |  |  |  |
 | 41 | Fractional Knapsack | [TUF](https://takeuforward.org/practice/dsa/fractional-knapsack?source=strivers-sde-sheet) | [▶ video](https://youtu.be/1ibsQrnuEEg?si=8R2By3wpHo0zZVHE) | 🟨 |  |  |  |
