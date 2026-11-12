@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-26/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-4%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-24-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-27/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-4%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-24-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -48,7 +48,7 @@
 
 </details>
 
-<details open><summary><b>Arrays Part-IV</b> - 2/5</summary>
+<details open><summary><b>Arrays Part-IV</b> - 3/5</summary>
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
@@ -56,7 +56,7 @@
 | 17 | 4 Sum | [LC 18](https://leetcode.com/problems/4sum/) M · [TUF](https://takeuforward.org/practice/dsa/4-sum?source=strivers-sde-sheet) | [▶ video](https://youtu.be/eD95WRfh81c) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/4sum) | 🟥 |  |  |  |
 | 18 | Longest Consecutive Sequence in an Array | [LC 128](https://leetcode.com/problems/longest-consecutive-sequence/) M · [TUF](https://takeuforward.org/practice/dsa/longest-consecutive-sequence-in-an-array?source=strivers-sde-sheet) | [▶ video](https://youtu.be/oO5uLE7EUlM) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/longest-consecutive-sequence-in-an-array) | 🟨 | ✅ | 2026-11-13 |  |
 | 19 | Count subarrays with given xor K | [TUF](https://takeuforward.org/practice/dsa/count-subarrays-with-given-xor-k?source=strivers-sde-sheet) | [▶ video](https://youtu.be/eZr-6p0B7ME) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/count-subarrays-with-a-given-xor-k) | 🟥 |  |  |  |
-| 20 | Longest Substring Without Repeating Characters | [LC 3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) M · [TUF](https://takeuforward.org/practice/dsa/longest-substring-without-repeating-characters?source=strivers-sde-sheet) | [▶ video](https://youtu.be/-zSxTJkcdAo?si=I2zfR-vlDMg0zU9z) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/longest-substring-without-repeating-characters) | 🟨 |  |  |  |
+| 20 | Longest Substring Without Repeating Characters | [LC 3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) M · [TUF](https://takeuforward.org/practice/dsa/longest-substring-without-repeating-characters?source=strivers-sde-sheet) | [▶ video](https://youtu.be/-zSxTJkcdAo?si=I2zfR-vlDMg0zU9z) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/longest-substring-without-repeating-characters) | 🟨 | ✅ | 2026-11-13 |  |
 
 </details>
 
