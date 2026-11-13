@@ -356,6 +356,18 @@
    "mins": null,
    "updated": "2026-11-13T01:12:24.776Z"
   },
+  "37": {
+   "solved": "2026-11-13",
+   "src": "manual",
+   "rating": "easy",
+   "rated": true,
+   "step": 1,
+   "due": "2026-11-16",
+   "reviews": [],
+   "notes": "",
+   "mins": null,
+   "updated": "2026-11-13T18:27:30.029Z"
+  },
   "38": {
    "solved": "2026-11-09",
    "src": "manual",
