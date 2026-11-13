@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-31/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-5%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-28-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-32/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-5%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-28-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -85,13 +85,13 @@
 
 </details>
 
-<details open><summary><b>Linked List and Arrays</b> - 3/6</summary>
+<details open><summary><b>Linked List and Arrays</b> - 4/6</summary>
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
 | 32 | Rotate a LL | [LC 61](https://leetcode.com/problems/rotate-list/) M · [TUF](https://takeuforward.org/practice/dsa/rotate-a-ll?source=strivers-sde-sheet) | [▶ video](https://youtu.be/uT7YI7XbTY8?si=ZaChW3a68c_v54Is) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/rotate-linked-list-right-k-places) | 🟨 | 🔁 | **2026-11-13** |  |
 | 33 | Clone a LL with random and next pointer | [LC 138](https://leetcode.com/problems/copy-list-with-random-pointer/) M · [TUF](https://takeuforward.org/practice/dsa/clone-a-ll-with-random-and-next-pointer?source=strivers-sde-sheet) | [▶ video](https://youtu.be/q570bKdrnlw?si=epZtpWvtNwuTf23o) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/clone-linked-list-random-pointer) | 🟥 |  |  |  |
-| 34 | 3 Sum | [LC 15](https://leetcode.com/problems/3sum/) M · [TUF](https://takeuforward.org/practice/dsa/3-sum?source=strivers-sde-sheet) | [▶ video](https://youtu.be/DhFh8Kw7ymk) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/3sum) | 🟨 |  |  |  |
+| 34 | 3 Sum | [LC 15](https://leetcode.com/problems/3sum/) M · [TUF](https://takeuforward.org/practice/dsa/3-sum?source=strivers-sde-sheet) | [▶ video](https://youtu.be/DhFh8Kw7ymk) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/3sum) | 🟨 | ✅ | 2026-11-14 |  |
 | 35 | Trapping Rainwater | [LC 42](https://leetcode.com/problems/trapping-rain-water/) H · [TUF](https://takeuforward.org/practice/dsa/trapping-rainwater?source=strivers-sde-sheet) | [▶ video](https://youtu.be/1_5VuquLbXg?si=NFG6df318_6OtGvg) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/trapping-rain-water) | 🟥 |  |  |  |
 | 36 | Remove duplicates from sorted array | [LC 26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) E · [TUF](https://takeuforward.org/practice/dsa/remove-duplicates-from-sorted-array?source=strivers-sde-sheet) | [▶ video](https://youtu.be/37E9ckMDdTk?t=1887) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/remove-duplicates-from-a-sorted-array-in-place) | 🟦 | ✅ | 2026-11-15 |  |
 | 37 | Maximum Consecutive Ones | [LC 485](https://leetcode.com/problems/max-consecutive-ones/) E · [TUF](https://takeuforward.org/practice/dsa/maximum-consecutive-ones?source=strivers-sde-sheet) | [▶ video](https://youtu.be/bYWLJb3vCWY?t=1124) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/maximum-consecutive-ones-in-a-binary-array) | 🟦 | ✅ | 2026-11-16 |  |
