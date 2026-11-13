@@ -332,6 +332,18 @@
    "mins": null,
    "updated": "2026-11-13T00:00:34.727Z"
   },
+  "32": {
+   "solved": "2026-11-12",
+   "src": "lc",
+   "rating": "ok",
+   "rated": true,
+   "step": 0,
+   "due": "2026-11-13",
+   "updated": "2026-11-13T00:03:38.392Z",
+   "reviews": [],
+   "notes": "",
+   "mins": null
+  },
   "38": {
    "solved": "2026-11-09",
    "src": "manual",
@@ -355,17 +367,6 @@
    "notes": "",
    "mins": null,
    "updated": "2026-11-10T20:36:52.652Z"
-  },
-  "32": {
-   "solved": "2026-11-12",
-   "src": "lc",
-   "rating": "ok",
-   "rated": false,
-   "step": 0,
-   "due": "2026-11-13",
-   "updated": "2026-11-13T00:00:44+00:00",
-   "reviews": [],
-   "notes": ""
   }
  },
  "sync": {
