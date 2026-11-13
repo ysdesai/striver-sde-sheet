@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-28/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-4%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-24-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-29/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-4%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-24-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -80,16 +80,16 @@
 | 27 | Detect a loop in LL | [LC 141](https://leetcode.com/problems/linked-list-cycle/) E · [TUF](https://takeuforward.org/practice/dsa/detect-a-loop-in-ll?source=strivers-sde-sheet) | [▶ video](https://youtu.be/wiOo4DC5GGA?si=zagt6O6tFXc4_3cx) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/detect-cycle-linked-list) | 🟨 | 🔁 | **2026-11-10** |  |
 | 28 | Reverse LL in group of given size K | [LC 25](https://leetcode.com/problems/reverse-nodes-in-k-group/) H · [TUF](https://takeuforward.org/practice/dsa/reverse-ll-in-group-of-given-size-k?source=strivers-sde-sheet) | [▶ video](https://youtu.be/lIar1skcQYI?si=_jFghHKX4eaK36a1) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-linked-list-k-groups) | 🟥 |  |  |  |
 | 29 | Check if LL is palindrome or not | [LC 234](https://leetcode.com/problems/palindrome-linked-list/) E · [TUF](https://takeuforward.org/practice/dsa/check-if-ll-is-palindrome-or-not?source=strivers-sde-sheet) | [▶ video](https://youtu.be/lRY_G-u_8jk?si=BpM8hRYvXSYyjl-G) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/check-if-a-linked-list-is-a-palindrome) | 🟨 | 🔁 | **2026-11-08** |  |
-| 30 | Find the starting point in LL | [LC 142](https://leetcode.com/problems/linked-list-cycle-ii/) M · [TUF](https://takeuforward.org/practice/dsa/find-the-starting-point-in-ll?source=strivers-sde-sheet) | [▶ video](https://youtu.be/2Kd0KKmmHFc?si=7UreDPRjRvapeVB0) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/find-start-of-cycle-linked-list) | 🟨 | ✅ | 2026-11-15 |  |
+| 30 | Find the starting point in LL | [LC 142](https://leetcode.com/problems/linked-list-cycle-ii/) M · [TUF](https://takeuforward.org/practice/dsa/find-the-starting-point-in-ll?source=strivers-sde-sheet) | [▶ video](https://youtu.be/2Kd0KKmmHFc?si=7UreDPRjRvapeVB0) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/find-start-of-cycle-linked-list) | 🟨 | ✅ | 2026-11-19 |  |
 | 31 | Flattening of LL | [LC 23](https://leetcode.com/problems/merge-k-sorted-lists/) H · [TUF](https://takeuforward.org/practice/dsa/flattening-of-ll?source=strivers-sde-sheet) | [▶ video](https://youtu.be/ykelywHJWLg?si=InMg9MmTHzY22NSR) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/flatten-linked-list) | 🟥 |  |  |  |
 
 </details>
 
-<details><summary><b>Linked List and Arrays</b> - 0/6</summary>
+<details open><summary><b>Linked List and Arrays</b> - 1/6</summary>
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
-| 32 | Rotate a LL | [LC 61](https://leetcode.com/problems/rotate-list/) M · [TUF](https://takeuforward.org/practice/dsa/rotate-a-ll?source=strivers-sde-sheet) | [▶ video](https://youtu.be/uT7YI7XbTY8?si=ZaChW3a68c_v54Is) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/rotate-linked-list-right-k-places) | 🟨 |  |  |  |
+| 32 | Rotate a LL | [LC 61](https://leetcode.com/problems/rotate-list/) M · [TUF](https://takeuforward.org/practice/dsa/rotate-a-ll?source=strivers-sde-sheet) | [▶ video](https://youtu.be/uT7YI7XbTY8?si=ZaChW3a68c_v54Is) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/rotate-linked-list-right-k-places) | 🟨 | ✅ | 2026-11-13 |  |
 | 33 | Clone a LL with random and next pointer | [LC 138](https://leetcode.com/problems/copy-list-with-random-pointer/) M · [TUF](https://takeuforward.org/practice/dsa/clone-a-ll-with-random-and-next-pointer?source=strivers-sde-sheet) | [▶ video](https://youtu.be/q570bKdrnlw?si=epZtpWvtNwuTf23o) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/clone-linked-list-random-pointer) | 🟥 |  |  |  |
 | 34 | 3 Sum | [LC 15](https://leetcode.com/problems/3sum/) M · [TUF](https://takeuforward.org/practice/dsa/3-sum?source=strivers-sde-sheet) | [▶ video](https://youtu.be/DhFh8Kw7ymk) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/3sum) | 🟨 |  |  |  |
 | 35 | Trapping Rainwater | [LC 42](https://leetcode.com/problems/trapping-rain-water/) H · [TUF](https://takeuforward.org/practice/dsa/trapping-rainwater?source=strivers-sde-sheet) | [▶ video](https://youtu.be/1_5VuquLbXg?si=NFG6df318_6OtGvg) · [article](https://takeuforward.org/blogs/data-structure-and-algorithm/trapping-rain-water) | 🟥 |  |  |  |
