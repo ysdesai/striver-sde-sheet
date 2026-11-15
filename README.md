@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-32/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-5%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-29-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-33/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-6%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-29-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -204,14 +204,14 @@
 
 </details>
 
-<details><summary><b>String Part-II</b> - 0/6</summary>
+<details open><summary><b>String Part-II</b> - 1/6</summary>
 
 | # | Problem | Practice | Learn | Lvl | Status | Next review | Code |
 |---|---|---|---|---|---|---|---|
 | 88 | Z function | [≈ LC 2223](https://leetcode.com/problems/sum-of-scores-of-built-strings/) H · [TUF](https://takeuforward.org/practice/dsa/z-function?source=strivers-sde-sheet) | [article](https://takeuforward.org/blogs/data-structure-and-algorithm/z-function) | 🟥 |  |  |  |
 | 89 | KMP Algorithm or LPS array | [≈ LC 214](https://leetcode.com/problems/shortest-palindrome/) H · [TUF](https://takeuforward.org/practice/dsa/kmp-algorithm-or-lps-array?source=strivers-sde-sheet) |  | 🟥 |  |  |  |
 | 90 | Minimum insertions to make string palindrome | [LC 1312](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/) H · [TUF](https://takeuforward.org/practice/dsa/minimum-insertions-to-make-string-palindrome?source=strivers-sde-sheet) | [▶ video](https://www.youtube.com/watch?v=xPBLEj41rFU) | 🟥 |  |  |  |
-| 91 | Valid Anagram | [LC 242](https://leetcode.com/problems/valid-anagram/) E · [TUF](https://takeuforward.org/practice/dsa/valid-anagram?source=strivers-sde-sheet) | [article](https://takeuforward.org/blogs/data-structure-and-algorithm/check-if-two-strings-are-anagrams) | 🟦 |  |  |  |
+| 91 | Valid Anagram | [LC 242](https://leetcode.com/problems/valid-anagram/) E · [TUF](https://takeuforward.org/practice/dsa/valid-anagram?source=strivers-sde-sheet) | [article](https://takeuforward.org/blogs/data-structure-and-algorithm/check-if-two-strings-are-anagrams) | 🟦 | ✅ | 2026-11-15 |  |
 | 92 | Count and say | [LC 38](https://leetcode.com/problems/count-and-say/) M · [TUF](https://takeuforward.org/practice/dsa/count-and-say?source=strivers-sde-sheet) | [article](https://takeuforward.org/blogs/data-structure-and-algorithm/count-and-say) | 🟨 |  |  |  |
 | 93 | Compare version numbers | [LC 165](https://leetcode.com/problems/compare-version-numbers/) M · [TUF](https://takeuforward.org/practice/dsa/compare-version-numbers?source=strivers-sde-sheet) |  | 🟨 |  |  |  |
 
