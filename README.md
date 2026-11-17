@@ -2,7 +2,7 @@
 
 **[Open the live dashboard ->](https://ysdesai.github.io/striver-sde-sheet/)** - check off problems, rate them, take notes, and see what's due for revision today.
 
-![solved](https://img.shields.io/badge/solved-34/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-1%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-31-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
+![solved](https://img.shields.io/badge/solved-34/156-2a78d6?style=flat-square) ![streak](https://img.shields.io/badge/streak-1%20days-e36209?style=flat-square) ![due for revision](https://img.shields.io/badge/due%20for%20revision-32-d4a72c?style=flat-square) ![mastered](https://img.shields.io/badge/mastered-0-1a7f37?style=flat-square) ![plan](https://img.shields.io/badge/plan-behind-cf222e?style=flat-square) ![target](https://img.shields.io/badge/target-2026--12--20-8b949e?style=flat-square)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="Progress overview" src="assets/stats-light.svg"></picture>
 
@@ -157,7 +157,7 @@
 | 62 | Maximum Sum Combination | [TUF](https://takeuforward.org/practice/dsa/maximum-sum-combination?source=strivers-sde-sheet) |  | 🟨 |  |  |  |
 | 63 | Find Median from Data Stream | [LC 295](https://leetcode.com/problems/find-median-from-data-stream/) H · [TUF](https://takeuforward.org/practice/dsa/find-median-from-data-stream?source=strivers-sde-sheet) | [article](https://takeuforward.org/blogs/data-structure-and-algorithm/find-median-data-stream) | 🟥 |  |  |  |
 | 64 | Merge K Sorted Arrays | [LC 23](https://leetcode.com/problems/merge-k-sorted-lists/) H · [TUF](https://takeuforward.org/practice/dsa/merge-k-sorted-arrays?source=strivers-sde-sheet) |  | 🟥 |  |  |  |
-| 65 | Top K Frequent Elements | [LC 347](https://leetcode.com/problems/top-k-frequent-elements/) M · [TUF](https://takeuforward.org/practice/dsa/top-k-frequent-elements?source=strivers-sde-sheet) | [article](https://takeuforward.org/blogs/data-structure-and-algorithm/top-k-frequent-elements) | 🟨 | ✅ | 2026-11-17 |  |
+| 65 | Top K Frequent Elements | [LC 347](https://leetcode.com/problems/top-k-frequent-elements/) M · [TUF](https://takeuforward.org/practice/dsa/top-k-frequent-elements?source=strivers-sde-sheet) | [article](https://takeuforward.org/blogs/data-structure-and-algorithm/top-k-frequent-elements) | 🟨 | 🔁 | **2026-11-17** |  |
 
 </details>
 
